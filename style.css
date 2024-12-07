@@ -1,0 +1,44 @@
+body {
+    background-color: #000000;
+    background: url('../Assets/BG.png') repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: WanderersLost, Courier, monospace;
+}
+.Title {
+    font-size: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.Links {
+    text-decoration: none;
+    color: transparent;
+}
+.LinkButton {
+    width: 120px;
+    height: 120px;
+    image-rendering: pixelated;
+}
+.TextBox {
+    background-color: #000000;
+    background-image: url('../Assets/BG02.png');
+    background-repeat: repeat;
+
+    padding-left: 25px;
+    padding-right: 25px;
+    vertical-align:middle;
+    max-width: 650px;
+    display: inline-block;
+
+    border-radius: 8px;
+    border: 2px white solid;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: WanderersLost, Courier, monospace;
+}
