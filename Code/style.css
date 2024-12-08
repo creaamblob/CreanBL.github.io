@@ -22,6 +22,12 @@ body {
     height: 120px;
     image-rendering: pixelated;
 }
+.LinkButton:hover {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+}
 .TextBox {
     background-color: #000000;
     background-image: url('../Assets/BG02.png');
