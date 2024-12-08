@@ -21,8 +21,20 @@
             <p>Welcome to my website!</p>
             <p>You'll find my creations, guides, art and information about me here.</p>
             <p>Please take a look around!</p><br>
+
+            <div style="display: inline-block;">
+                <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Main.html" class="Links">
+                    <img src="../Assets/Creations.png" class="LinkButton">
+                </a>
+                <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Main.html" class="Links">
+                    <img src="../Assets/Gallery.png" class="LinkButton">
+                </a>
+                <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Main.html" class="Links">
+                    <img src="../Assets/Guides.png" class="LinkButton">
+                </a>
+            </div>
             
-            <h1>Other Links<BR>
+            <h1>Other Links<br>
             <a href="https://www.youtube.com/@CreanBL" class="Links" target="_blank">
                 <img src="../Assets/YoutubeLogo.png" class="LinkButton">
             </a>
@@ -47,6 +59,16 @@
                 }
                 var myMinutes = date.getUTCMinutes();
                 var mySeconds = date.getUTCSeconds();
+
+                if (myHours < 10) {
+                    myHours = "0" + String(myHours);
+                }
+                if (myMinutes < 10) {
+                    myMinutes = "0" + String(myMinutes);
+                }
+                if (mySeconds < 10) {
+                    mySeconds = "0" + String(mySeconds);
+                }
                 document.getElementById("time").innerHTML = String(myHours) + " : " + String(myMinutes) + " : " + String(mySeconds);
             }
         </script>
