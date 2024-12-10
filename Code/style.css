@@ -44,7 +44,7 @@ a:visited {
 
     padding: 25px;
     vertical-align:middle;
-    max-width: 650px;
+    max-width: 750px;
     display: inline-block;
 
     border-radius: 8px;
@@ -97,4 +97,8 @@ a:visited {
     height: 80px;
     margin: 0px 25px 5px;
     background-color: white;
+  }
+  thought {
+    color: gray;
+    font-size: 12px;
   }
