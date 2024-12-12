@@ -30,12 +30,42 @@ a:visited {
     width: 120px;
     height: 120px;
     image-rendering: pixelated;
+    transition: 0.75s;
 }
 .LinkButton:hover {
+    width: 175px;
+    height: 175px;
+}
+.LinkButtonSmol {
+    width: 48px;
+    height: 48px;
+    image-rendering: pixelated;
+    transition: 0.5s;
+}
+.LinkButtonSmol:hover {
+    width: 96px;
+    height: 96px;
+}
+linktab {
+    width: 100px;
+    height: 100%;
+    position: fixed;
+    top: 0%;
+    left: -70px;
+    background-color: black;
+    vertical-align: middle;
+    transition: 0.5s;
+    border: 0px transparent solid;
+    border-radius: 0px 20px 20px 0px;
+}
+linktab:hover {
     width: 150px;
-    height: 150px;
-    background-color: white;
-    border-radius: 10px;
+    height: 99.5%;
+    left: -3px;
+
+    border-radius: 0px 20px 20px 0px;
+    border: 3px white solid;
+    background-color: rgb(19, 5, 37);
 }
 .TextBox {
     background-color: #000000;
@@ -101,4 +131,7 @@ a:visited {
   thought {
     color: gray;
     font-size: 12px;
+  }
+  #linkWindow {
+    border-radius: 2px;
   }
