@@ -10,6 +10,7 @@ body {
     font-size: 30px;
     text-align: center;
     font-family: WanderersLost, Courier, monospace;
+    text-underline-offset: 12px;
 }
 a:link {
     color: deepskyblue;
@@ -55,17 +56,12 @@ linktab {
     background-color: black;
     vertical-align: middle;
     transition: 0.5s;
-    border: 0px transparent solid;
-    border-radius: 0px 20px 20px 0px;
 }
 linktab:hover {
     width: 150px;
     height: 100%;
     left: -3px;
-    top: -3px;
 
-    border-radius: 0px 20px 20px 0px;
-    border: 3px white solid;
     background-color: rgb(19, 5, 37);
 }
 .TextBox {
