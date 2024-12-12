@@ -60,8 +60,9 @@ linktab {
 }
 linktab:hover {
     width: 150px;
-    height: 99.5%;
+    height: 100%;
     left: -3px;
+    top: -3px;
 
     border-radius: 0px 20px 20px 0px;
     border: 3px white solid;

@@ -1,4 +1,4 @@
-My personal website, currently doesn't have much
+My personal website
 
 URL:
 https://creaamblob.github.io/CreanBL.github.io
