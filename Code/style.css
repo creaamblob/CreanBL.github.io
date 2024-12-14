@@ -91,6 +91,7 @@ linktab:hover {
     padding: 25px;
     vertical-align:middle;
     width: 300px;
+    height: 65px;
     display: inline-block;
 
     border-radius: 8px;
@@ -111,16 +112,22 @@ linktab:hover {
     color: rgb(0, 0, 0);
     border: none;
     font-size: 40px;
-    font-family: 'Lucida Console', Courier, monospace;
+    font-family: WanderersLost, Courier, monospace;
     outline: none;
-    transition: 0.75s;
+    transition: 0.5s;
     background-color: rgb(87, 95, 117);
-    border-radius: 15px;
+    border: 4px transparent solid;
+    border-radius: 5px;
     vertical-align: middle;
+  }
+  .ChangePageButton:hover {
+    height: 65px;
+    background-color: rgb(133, 142, 168);
   }
   .ChangePageButton.active {
     cursor: not-allowed;
     color: rgb(129, 89, 158);
+    border-color: rgb(129, 89, 158);
     height: 80px;
     margin: 0px 25px 5px;
     background-color: white;
