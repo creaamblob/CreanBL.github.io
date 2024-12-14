@@ -10,7 +10,7 @@ body {
     font-size: 30px;
     text-align: center;
     font-family: WanderersLost, Courier, monospace;
-    text-underline-offset: 12px;
+    text-underline-offset: 4px;
 }
 a:link {
     color: deepskyblue;
