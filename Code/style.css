@@ -114,7 +114,7 @@ linktab:hover {
     font-size: 40px;
     font-family: WanderersLost, Courier, monospace;
     outline: none;
-    transition: 0.5s;
+    transition: 1s;
     background-color: rgb(87, 95, 117);
     border: 4px transparent solid;
     border-radius: 5px;
