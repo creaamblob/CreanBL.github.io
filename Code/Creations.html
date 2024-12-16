@@ -42,23 +42,23 @@
 
                 <h2>Projects</h2>
                 <div id="Page1" class="Page">
-                    <p style="display: table-caption; width: 100%; image-rendering: pixelated;"><br>
+                    <div style="display: table; width: 100%; image-rendering: pixelated; background-color: rgba(158, 103, 1, 0.204);"><br>
                         <a href="https://creaamblob.github.io/CreanBL.github.io/Code/CreationsFolder/TranscendentMod.html">
                             <img src="../Assets/Creations/TranscendentModThumbnail.png" style="width: 95%; vertical-align: middle; justify-content: left;">
                         </a>
                         <span style="font-size: 25px;">Transcendent Mod</span><br>
                         <span style="font-size: 15px;">A Terraria 1.4.4 content mod for tModloader.</span>
-                    </p>
+                    </div>
                 </div>
 
                 <div id="Page2" class="Page">
-                    <p style="display: table-caption; width: 100%; image-rendering: pixelated;"><br>
+                    <div style="display: table; width: 100%; image-rendering: pixelated; background-color: rgba(158, 103, 1, 0.204);"><br>
                         <a href="https://creaamblob.github.io/CreanBL.github.io/Code/CreationsFolder/VTRU.html">
                             <img src="../Assets/Creations/VTRUthumbnail.png" style="width: 95%; vertical-align: middle; justify-content: left;">
                         </a>
                         <span style="font-size: 25px;">Various Threats: Reunleashed</span><br>
                         <span style="font-size: 15px;">A Terraria 1.4.4 mod for tModloader that reworks various bosses.</span>
-                    </p>
+                    </div>
                 </div>
                 
                 <div style="background-color: gold; width: 10px; height: 10px; border-radius: 10px;" id="PreviewChangeBar"></div><br>
@@ -86,11 +86,11 @@
            var curPreview = 1;
            var changePageTimer = 0;
 
-           setInterval(ChangePreviewAutomatically, 1)
+           setInterval(ChangePreviewAutomatically, 8);
             function ChangePreviewAutomatically() {
                 console.log(String(changePageTimer));
                 changePageTimer += 1;
-                if (changePageTimer > 390) {
+                if (changePageTimer > 760) {
                     switch (curPreview) {
                         case 1: ChangePreview(2); break;
                         case 2: ChangePreview(1); break;
@@ -98,7 +98,7 @@
 
                     changePageTimer = 0;
                 }
-                document.getElementById("PreviewChangeBar").style.width = (String)(760 - (changePageTimer * 2)) + "px";
+                document.getElementById("PreviewChangeBar").style.width = (String)(760 - changePageTimer) + "px";
             }
 
             function ChangePreview(goPreview) {
