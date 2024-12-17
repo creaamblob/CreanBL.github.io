@@ -29,15 +29,32 @@
                 <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Info.html">
                     <img src="../Assets/Info.png" class="LinkButtonSmol">
                 </a>
+                
+                <br>
+                -
+                <br>
+
+                <a href="https://www.youtube.com/@CreanBL">
+                    <img src="../Assets/YoutubeLogo.png" class="LinkButtonSmol">
+                </a>
+
+                <a href="https://www.steamcommunity.com/id/CreanBL">
+                    <img src="../Assets/SteamLogo.png" class="LinkButtonSmol">
+                </a>
+
+                <a href="https://www.github.com/CreaamBlob">
+                    <img src="../Assets/GithubLogo.png" class="LinkButtonSmol">
+                </a>
             </div>
         </linktab>
 
-        <div class="Title">
-            <h1>My Creations</h1>
-        </div>
-
         <center>
-            <div class="TextBox" style="width: 800px;">
+            <br><br>
+            <div class="TextBox" style="width: 850px;">
+                <div class="Title">
+                    <h2>My Creations</h2>
+                </div>
+
                 <p>Collection of things I have created.</p>
 
                 <h2>Projects</h2>
@@ -70,15 +87,21 @@
 
                 <p>Please select a category.</p>
                 
-                <h3>Programmed</h3>
-                <a href="https://creaamblob.github.io/CreanBL.github.io/Code/CreationsFolder/Programming.html" class="Links">
-                    <img src="../Assets/Code.png" class="LinkButton">
-                </a>
-                
-                <h3>Drawn</h3>
-                <a href="https://creaamblob.github.io/CreanBL.github.io/Code/CreationsFolder/Art.html" class="Links">
-                    <img src="../Assets/Gallery.png" class="LinkButton">
-                </a>
+                <div style="padding-bottom: 400px;">
+                    <div style="float: left; width: 300px;">
+                        <h3>Programmed</h3>
+                        <a href="https://creaamblob.github.io/CreanBL.github.io/Code/CreationsFolder/Programming.html" class="Links">
+                            <img src="../Assets/Code.png" class="LinkButton">
+                        </a>
+                    </div>
+
+                    <div style="float: right; width: 300px;">
+                        <h3>Drawn</h3>
+                        <a href="https://creaamblob.github.io/CreanBL.github.io/Code/CreationsFolder/Art.html" class="Links">
+                            <img src="../Assets/Gallery.png" class="LinkButton">
+                        </a>
+                    </div>
+                </div>
             </div>
         </center>
 
@@ -90,7 +113,7 @@
             function ChangePreviewAutomatically() {
                 console.log(String(changePageTimer));
                 changePageTimer += 1;
-                if (changePageTimer > 760) {
+                if (changePageTimer > 850) {
                     switch (curPreview) {
                         case 1: ChangePreview(2); break;
                         case 2: ChangePreview(1); break;
@@ -98,7 +121,7 @@
 
                     changePageTimer = 0;
                 }
-                document.getElementById("PreviewChangeBar").style.width = (String)(760 - changePageTimer) + "px";
+                document.getElementById("PreviewChangeBar").style.width = (String)(850 - changePageTimer) + "px";
             }
 
             function ChangePreview(goPreview) {
