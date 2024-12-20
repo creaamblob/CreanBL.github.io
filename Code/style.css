@@ -1,7 +1,6 @@
 html {
     background-color: black;
-    background-image: url('../Assets/BG.png');
-    background-repeat: no-repeat;
+    background: url('../Assets/BG.png') repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -91,6 +90,14 @@ linktab:hover {
     height: 100%;
     left: -3px;
     background-color: rgb(61, 18, 2);
+}
+button {
+    font-family: WanderersLost;
+    background-color: black;
+    border-radius: 5px;
+    border: 2px white solid;
+    color: white;
+    cursor: url('../Assets/Cursor_Hover.png'),auto;
 }
 .TextBox {
     background-color: #000000;
