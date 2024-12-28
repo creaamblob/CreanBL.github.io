@@ -139,13 +139,17 @@ button {
     font-size: 30px;
     text-align: center;
     font-family: WanderersLost, Courier, monospace;
+    transition: 0.5s;
+}
+.BlogCard:hover {
+    transform: scale(1.4);
 }
 .ChangePageButton {
     display: flexbox;
     float:none;
     width: 120px;
-    height: 50px;
-    margin: 10px 10px 10px;
+    height: 80px;
+    margin: 0px 30px 0px;
     cursor: url('../Assets/Cursor_Hover.png') 18 9, auto;
     text-align: center;
     color: rgb(0, 0, 0);
@@ -153,23 +157,21 @@ button {
     font-size: 40px;
     font-family: WanderersLost, Courier, monospace;
     outline: none;
-    transition: 0.66s;
+    transition: 0.5s;
     background-color: rgb(87, 95, 117);
     border: 4px transparent solid;
     border-radius: 5px;
     vertical-align: middle;
   }
   .ChangePageButton:hover {
-    height: 65px;
-    margin: 0px 50px 5px;
+    transform: scale(1.2);
     background-color: rgb(133, 142, 168);
   }
   .ChangePageButton.active {
     cursor: url('../Assets/Cursor_NuhUh.png') 11 8, auto;
     color: rgb(129, 89, 158);
     border-color: rgb(129, 89, 158);
-    height: 100px;
-    margin: 0px 25px 5px;
+    transform: scale(1.4);
     background-color: white;
   }
   thought {
