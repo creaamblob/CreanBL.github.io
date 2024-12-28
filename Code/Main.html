@@ -95,7 +95,7 @@
             </p><br>
 
             <div style="display: inline-block; width: 100%; height: 225px; justify-content: center; vertical-align: middle; padding-bottom: 200px;">
-                <h1>Navigation</h1>
+                <h1>Navigation</h1><br>
                 <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Creations.html" class="Links" style="margin-top: 50%;">
                     <img src="../Assets/Creations.png" class="LinkButton">
                 </a>
@@ -119,9 +119,12 @@
             </div>
             
             <div style="display: inline-block; width: 100%; height: 225px; justify-content: center; vertical-align: top; padding-bottom: 100px;">
-                <h1>Other Links</h1>
+                <h1>Other Links</h1><br>
                     <a href="https://www.youtube.com/@CreanBL" class="Links" target="_blank">
                         <img src="../Assets/YoutubeLogo.png" class="LinkButton">
+                    </a>
+                    <a href="https://www.youtube.com/@CreanBL2" class="Links" target="_blank">
+                        <img src="../Assets/YoutubeLogo2.png" class="LinkButton">
                     </a>
                     <a href="https://www.steamcommunity.com/id/CreanBL" class="Links" target="_blank">
                         <img src="../Assets/SteamLogo.png" class="LinkButton">
@@ -167,19 +170,24 @@
             <img src="../Assets/WelcomeBlinkie.gif" style="image-rendering: pixelated;"><br>
             <img src="../Assets/tModletBlinkie.gif" style="image-rendering: pixelated;">
 
-            <h2 style="margin-bottom: 5px;">Send a message:</h2>
+            <h2 style="margin-bottom: 5px; font-size: 30px;">Contact me:</h2>
+            <thought>creanblwebsite@gmail.com</thought>
+            <br><br>
+            <h2 style="margin-bottom: 5px">
+                <font style="color: gray;">(Private)</font><br>
+                Questbook:
+            </h2>
             <form action="https://api.web3forms.com/submit" method="post">
-                <thought>
-                    Sends to creanblwebsite@gmail.com<br>
-                    Completely private<br><br>
-                    Send an email directly to that adress if you want me to reply.<br>
-                    Otherwise, use the form below.
-                </thought><br><br>
+                <thought>Feel free to send your own website!</thought><br><br>
 
                 <input type="hidden" name="access_key" value="ce174ffb-49aa-4f45-968e-42213c024655">
-                <input type="email" name="email" placeholder="Your email" required><br>
-                <textarea name="message" placeholder="Type a message for me" style="min-width: 255px; max-width: 255px; min-height: 40px; max-height: 120px; overflow: auto;" required></textarea>
-                <input type="text" name="name" placeholder="Type 'Confirm' to proceed" id="botCheck" style="min-width: 255px; max-width: 255px; font-size: 12px;" required><br>
+                <input type="hidden" name="subject" value="Guestbook Signed">
+                <input type="text" name="name" style="min-width: 255px; max-width: 255px;" placeholder="Your name (optional)"><br>
+
+                <textarea name="message" placeholder="Type a message for me" style="min-width: 255px; max-width: 255px; min-height: 40px; max-height: 120px; font-size: 12px; overflow: auto;" required></textarea>
+                <br>
+
+                <input type="text" placeholder="Type 'Confirm' to proceed" id="botCheck" style="min-width: 255px; max-width: 255px; font-size: 12px;" required><br>
                 <input type="hidden" name="redirect" value="https://creaamblob.github.io/CreanBL.github.io/Code/Main.html">
                 <button type="submit" id="submitEmail">Send</button>
             </form>

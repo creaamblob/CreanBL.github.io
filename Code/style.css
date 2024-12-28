@@ -5,7 +5,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    cursor: url('../Assets/Cursor.png'),auto;
+    cursor: url('../Assets/Cursor.png') 11 8, auto;
 }
 body {
     margin: 0px;
@@ -14,7 +14,7 @@ body {
     text-align: center;
     font-family: WanderersLost, Courier, monospace;
     text-underline-offset: 4px;
-    cursor: url('../Assets/Cursor.png'), auto;
+    cursor: url('../Assets/Cursor.png') 11 8, auto;
 }
 h1 {
     text-underline-offset: 12px;
@@ -47,28 +47,27 @@ a:visited {
     width: 168px;
     height: 168px;
     image-rendering: pixelated;
-    transition: 0.75s;
+    transition: 0.5s;
     background-color: transparent;
     border-radius: 5px;
-    cursor: url('../Assets/Cursor_Hover.png'), pointer;
+    cursor: url('../Assets/Cursor_Hover.png') 18 9, pointer;
 }
 .LinkButton:hover {
-    width: 240px;
-    height: 240px;
+    transform: scale(1.5);
+    margin: 0px 50px 0px 50px;
     background-color: rgba(255, 255, 255, 0.404);
 }
 .LinkButtonSmol {
-    width: 48px;
-    height: 48px;
+    width: 72px;
+    height: 72px;
     image-rendering: pixelated;
-    transition: 0.5s;
+    transition: 0.25s;
     border-radius: 5px;
-    cursor: url('../Assets/Cursor_Hover.png'), pointe;
+    cursor: url('../Assets/Cursor_Hover.png') 18 9, pointer;
 }
 .LinkButtonSmol:hover {
-    width: 96px;
-    height: 96px;
-    padding: 25px 0px 25px 0px;
+    transform: scale(1.75);
+    margin: 25px 0px 25px 0px;
     background-color: rgba(255, 255, 255, 0.404);
 }
 linktab {
@@ -82,13 +81,13 @@ linktab {
     transition: 0.5s;
 }
 textarea {
-    cursor: url('../Assets/Cursor_Write.png'),auto;
+    cursor: url('../Assets/Cursor.png') 11 8, auto;
 }
 input {
-    cursor: url('../Assets/Cursor_Write.png'),auto;
+    cursor: url('../Assets/Cursor.png') 11 8, auto;
 }
 a {
-    cursor: url('../Assets/Cursor_Hover.png'),auto;
+    cursor: url('../Assets/Cursor_Hover.png') 18 9, auto;
 }
 linktab:hover {
     width: 220px;
@@ -102,7 +101,7 @@ button {
     border-radius: 5px;
     border: 2px white solid;
     color: white;
-    cursor: url('../Assets/Cursor_Hover.png'),auto;
+    cursor: url('../Assets/Cursor_Hover.png') 18 9, auto;
 }
 .TextBox {
     background-color: #000000;
@@ -147,7 +146,7 @@ button {
     width: 120px;
     height: 50px;
     margin: 10px 10px 10px;
-    cursor: url('../Assets/Cursor_Hover.png'),auto;
+    cursor: url('../Assets/Cursor_Hover.png') 18 9, auto;
     text-align: center;
     color: rgb(0, 0, 0);
     border: none;
@@ -166,7 +165,7 @@ button {
     background-color: rgb(133, 142, 168);
   }
   .ChangePageButton.active {
-    cursor: url('../Assets/Cursor_NuhUh.png'),auto;
+    cursor: url('../Assets/Cursor_NuhUh.png') 11 8, auto;
     color: rgb(129, 89, 158);
     border-color: rgb(129, 89, 158);
     height: 100px;
