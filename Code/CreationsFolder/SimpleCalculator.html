@@ -20,12 +20,24 @@
             border: 2px white solid;
             color: white;
         }
+        button {
+            transition: 0.5s;
+        }
+        button:hover {
+            transform: scale(1.6);
+            background-color: rgb(56, 52, 66);
+        }
         input[type=number]::-webkit-inner-spin-button {
             opacity: 0;
         }
         input[type=number] {
             -moz-appearance: textfield;
             appearance: textfield;
+            transition: 0.5s;
+        }
+        input[type=number]:hover {
+            transform: scale(1.4);
+            background-color: rgb(56, 52, 66);
         }
     </style>
     <body>
@@ -188,19 +200,6 @@
                             case "... You know that you can't divide by zero...": val = "... Are you expecting some secret dialog?"; break;
                             case "... Are you expecting some secret dialog?": val = exhaust; break;
                             case exhaust: val = " ... "; break;
-                        }
-
-                        if (divideZeroCounter > 33) {
-                            val = "I didn't plan to write anything, to mess with you. But here we are...";
-                        }
-                        if (divideZeroCounter > 125) {
-                            val = "I didn't expect you to reach this far, but your determination is really inspiring.";
-                        }
-                        if (divideZeroCounter > 999) {
-                            val = "What the fuck. " + String(divideZeroCounter);
-                        }
-                        if (divideZeroCounter > 9999) {
-                            val = "If you reached this legitimately, fuck you.";
                         }
                     }
                 }
