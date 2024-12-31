@@ -18,7 +18,7 @@
         input {
             font-family: WanderersLost;
             background-color: black;
-            border-radius: 5px;
+            border-radius: 2px;
             border: 2px white solid;
             color: white;
             transition: 0.5s;
@@ -30,7 +30,7 @@
         textarea {
             font-family: WanderersLost;
             background-color: black;
-            border-radius: 5px;
+            border-radius: 2px;
             border: 2px white solid;
             color: white;
             transition: 0.5s;
@@ -44,6 +44,41 @@
             width: 100%;
             height: 575px;
             border: 0px transparent solid;
+        }
+        .ExtraInfoPC {
+            background-image: url('../Assets/BG02.png');
+            background-repeat: repeat;
+            padding: 25px;
+            
+            max-width: 400px;
+            display: inline-block;
+            align-self: center;
+            vertical-align: top;
+            
+            border-radius: 2px;
+            border: 4px #292d3f solid;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            font-family: WanderersLost, Courier, monospace;
+        }
+        .ExtraInfoMobile {
+            display: none;
+            align-self: center;
+            vertical-align: top;
+            
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            font-family: WanderersLost, Courier, monospace;
+        }
+        @media screen and (max-width: 1600px) {
+            .ExtraInfoPC {
+                display: none;
+            }
+            .ExtraInfoMobile {
+                display:block;
+            }
         }
     </style>
     <body>
@@ -94,8 +129,13 @@
                 <h2>CreanBL's Website</h2>
             </div>
 
-            <img src="../Assets/CreanBL.png" style="width: 25%; padding: 75px 25px 225px 100px; float: right;">
+            <div class="ExtraInfoMobile" style="justify-content: center;">
+                <img src="../Assets/WelcomeBlinkie.gif" style="image-rendering: pixelated;">
+                <img src="../Assets/tModletBlinkie.gif" style="image-rendering: pixelated;">
+            </div>
 
+            <img src="../Assets/CreanBL.png" style="width: 25%; padding: 75px 25px 225px 100px; float: right;">
+            
             <p>
                 Welcome to my website!<br><br>
                 You'll find my creations, guides, art and information about me here.<br><br>
@@ -124,7 +164,7 @@
                 </a>
             </div>
 
-            <div style="display: flexbox; justify-content: left; align-items: center; width: 100%; background-image: url('../Assets/BG03.png'); border-radius: 5px;">
+            <div style="display: flexbox; justify-content: left; align-items: center; width: 100%; background-image: url('../Assets/BG03.png'); border-radius: 2px;">
                 <h1 style="padding-top: 20px; margin: 0px;">Articles</h1><br>
                 <iframe src="ArticlesBoxList.html" class="ArticlesBox"></iframe>
             </div>
@@ -144,6 +184,35 @@
                         <img src="../Assets/GithubLogo.png" class="LinkButton">
                     </a>
             </div>
+
+            <div class="ExtraInfoMobile" style="background-color: rgba(158, 103, 1, 0.204); margin-top: 100px;">
+                <h2>My Time:</h2>
+                <p style="background-color: transparent;" id="time2">00:00:00</p>
+
+                <h2 style="margin-bottom: 5px">
+                    <font style="color: gray;">(Private)</font><br>
+                    Questbook:
+                </h2>
+                <form action="https://api.web3forms.com/submit" method="post">
+                    <thought>Feel free to send your own website!</thought><br><br>
+    
+                    <input type="hidden" name="access_key" value="ce174ffb-49aa-4f45-968e-42213c024655">
+                    <input type="hidden" name="subject" value="Guestbook Signed">
+                    <input type="text" name="name" style="min-width: 255px; max-width: 255px;" placeholder="Your name (optional)">
+    
+                    <br>
+                    <textarea name="message" placeholder="Type a message for me" style="min-width: 255px; max-width: 255px; min-height: 40px; max-height: 120px; font-size: 12px; overflow: auto;" required></textarea>
+                    <br>
+    
+                    <input type="text" placeholder="Type 'Confirm' to proceed" id="botCheck2" style="min-width: 255px; max-width: 255px; font-size: 12px;" required><br>
+                    <input type="hidden" name="redirect" value="https://creaamblob.github.io/CreanBL.github.io/Code/SendSuccess.html">
+                    <button type="submit" id="submitEmail2">Send</button>
+                </form>
+
+                <h2 style="margin-bottom: 5px; font-size: 30px;">Contact me:</h2>
+                <thought>creanblwebsite@gmail.com</thought>
+
+            </div>
         </div>
 
         </div>
@@ -155,13 +224,23 @@
 
             function UpdateEmailForm() {
                 var submitButton = document.getElementById("submitEmail");
+                var submitButton2 = document.getElementById("submitEmail2");
+
                 document.getElementById("botCheck").placeholder = "Type '" + String(number2) + "' to confirm";
+                document.getElementById("botCheck2").placeholder = "Type '" + String(number2) + "' to confirm";
 
                 if (document.getElementById("botCheck").value == String(number2)) {
                     submitButton.style.display = '';
                 }
                 else {
                     submitButton.style.display = 'none';
+                }
+
+                if (document.getElementById("botCheck2").value == String(number2)) {
+                    submitButton2.style.display = '';
+                }
+                else {
+                    submitButton2.style.display = 'none';
                 }
             }
 
@@ -174,10 +253,11 @@
                 const FinlandTime2 = new Date(FinlandTime);
 
                 document.getElementById("time").innerHTML = String(FinlandTime2);
+                document.getElementById("time2").innerHTML = String(FinlandTime2);
             }
         </script>
 
-        <div class="TextBox" style="max-width: 400px; align-self: center; vertical-align: top;">
+        <div class="ExtraInfoPC">
             <img src="../Assets/WelcomeBlinkie.gif" style="image-rendering: pixelated;"><br>
             <img src="../Assets/tModletBlinkie.gif" style="image-rendering: pixelated;">
 
@@ -200,7 +280,7 @@
                 <br>
 
                 <input type="text" placeholder="Type 'Confirm' to proceed" id="botCheck" style="min-width: 255px; max-width: 255px; font-size: 12px;" required><br>
-                <input type="hidden" name="redirect" value="https://creaamblob.github.io/CreanBL.github.io/Code/Main.html">
+                <input type="hidden" name="redirect" value="https://creaamblob.github.io/CreanBL.github.io/Code/SendSuccess.html">
                 <button type="submit" id="submitEmail">Send</button>
             </form>
             <h2>My Time:</h2>

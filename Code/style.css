@@ -49,7 +49,7 @@ a:visited {
     image-rendering: pixelated;
     transition: 0.5s;
     background-color: transparent;
-    border-radius: 5px;
+    border-radius: 2px;
     cursor: url('../Assets/Cursor_Hover.png') 18 9, pointer;
 }
 .LinkButton:hover {
@@ -62,7 +62,7 @@ a:visited {
     height: 72px;
     image-rendering: pixelated;
     transition: 0.25s;
-    border-radius: 5px;
+    border-radius: 2px;
     cursor: url('../Assets/Cursor_Hover.png') 18 9, pointer;
 }
 .LinkButtonSmol:hover {
@@ -80,6 +80,14 @@ linktab {
     vertical-align: middle;
     transition: 0.5s;
 }
+linktab:hover {
+    width: 220px;
+    height: 100%;
+    left: -3px;
+    background-image: url(../Assets/BG.png);
+    background-size: cover;
+    border: 2px white solid;
+}
 textarea {
     cursor: url('../Assets/Cursor.png') 11 8, auto;
 }
@@ -89,16 +97,10 @@ input {
 a {
     cursor: url('../Assets/Cursor_Hover.png') 18 9, auto;
 }
-linktab:hover {
-    width: 220px;
-    height: 100%;
-    left: -3px;
-    background-color: rgb(61, 18, 2);
-}
 button {
     font-family: WanderersLost;
     background-color: black;
-    border-radius: 5px;
+    border-radius: 2px;
     border: 2px white solid;
     color: white;
     cursor: url('../Assets/Cursor_Hover.png') 18 9, auto;
@@ -113,7 +115,7 @@ button {
     max-width: 1025px;
     display: inline-block;
 
-    border-radius: 5px;
+    border-radius: 2px;
     border: 4px #292d3f solid;
     color: white;
     font-size: 30px;
@@ -133,7 +135,7 @@ button {
     height: 65px;
     display: inline-block;
 
-    border-radius: 8px;
+    border-radius: 2px;
     border: 2px white solid;
     color: white;
     font-size: 30px;
@@ -160,7 +162,7 @@ button {
     transition: 0.5s;
     background-color: rgb(87, 95, 117);
     border: 4px transparent solid;
-    border-radius: 5px;
+    border-radius: 2px;
     vertical-align: middle;
   }
   .ChangePageButton:hover {
