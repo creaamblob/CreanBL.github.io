@@ -41,26 +41,27 @@
             background-color: rgb(56, 52, 66);
         }
         .ArticlesBox {
-            width: 100%;
+            width: 75%;
             height: 575px;
             border: 0px transparent solid;
         }
         .ExtraInfoPC {
-            background-image: url('../Assets/BG02.png');
-            background-repeat: repeat;
-            padding: 25px;
+            background-image: linear-gradient(to bottom, rgb(3, 76, 145), rgb(18, 18, 119),rgb(18, 18, 119),rgb(18, 18, 119) );
+            box-shadow: 0px 0px 10px deepskyblue;
+            border: 4px deepskyblue ridge;
+            
+            padding: 15px 5px 15px;
+            border-radius: 12.5px;
+            
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            font-family: WanderersLost, Courier, monospace;
             
             max-width: 400px;
             display: inline-block;
             align-self: center;
             vertical-align: top;
-            
-            border-radius: 2px;
-            border: 4px #292d3f solid;
-            color: white;
-            font-size: 30px;
-            text-align: center;
-            font-family: WanderersLost, Courier, monospace;
         }
         .ExtraInfoMobile {
             display: none;
@@ -83,135 +84,155 @@
     </style>
     <body>
         <linktab>
-            <div style="display: grid;" id="linktabElements">
+            <div style="display: grid; justify-content: center;">
                 <h4 style="font-size: 15px;">Crean UI 1.0</h4>
-                <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Main.html">
-                    <img src="../Assets/Home.png" class="LinkButtonSmol">
-                </a>
 
-                <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Creations.html">
-                    <img src="../Assets/Creations.png" class="LinkButtonSmol">
-                </a>
-
-                <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Blogs.html">
-                    <img src="../Assets/Blog.png" class="LinkButtonSmol">
-                </a>
-                <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Info.html">
-                    <img src="../Assets/Info.png" class="LinkButtonSmol">
-                </a>
-                <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Misc.html">
-                    <img src="../Assets/Misc.png" class="LinkButtonSmol">
-                </a>
-
-                <br>
-                -
-                <br>
-
-                <a href="https://www.youtube.com/@CreanBL">
-                    <img src="../Assets/YoutubeLogo.png" class="LinkButtonSmol">
-                </a>
-
-                <a href="https://www.steamcommunity.com/id/CreanBL">
-                    <img src="../Assets/SteamLogo.png" class="LinkButtonSmol">
-                </a>
-
-                <a href="https://www.github.com/CreaamBlob">
-                    <img src="../Assets/GithubLogo.png" class="LinkButtonSmol">
-                </a>
+                <div class="WindowContainer" style="max-width: 150px; min-height: 92.5%; max-height: 92.5%;">
+                    <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Main.html">
+                        <img src="../Assets/Home.png" class="LinkButtonSmol">
+                    </a>
+    
+                    <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Creations.html">
+                        <img src="../Assets/Creations.png" class="LinkButtonSmol">
+                    </a>
+    
+                    <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Blogs.html">
+                        <img src="../Assets/Blog.png" class="LinkButtonSmol">
+                    </a>
+                    <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Info.html">
+                        <img src="../Assets/Info.png" class="LinkButtonSmol">
+                    </a>
+                    <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Misc.html">
+                        <img src="../Assets/Misc.png" class="LinkButtonSmol">
+                    </a>
+    
+                    <br>
+                    -
+                    <br>
+    
+                    <a href="https://www.youtube.com/@CreanBL">
+                        <img src="../Assets/YoutubeLogo.png" class="LinkButtonSmol">
+                    </a>
+    
+                    <a href="https://www.steamcommunity.com/id/CreanBL">
+                        <img src="../Assets/SteamLogo.png" class="LinkButtonSmol">
+                    </a>
+    
+                    <a href="https://www.github.com/CreaamBlob">
+                        <img src="../Assets/GithubLogo.png" class="LinkButtonSmol">
+                    </a>
+                </div>
+                
             </div>
         </linktab>
 
         <center>
         <br><br>
-        <div class="TextBox" style="padding-bottom: 100px;">
+        <div class="RetroWindow">
 
-            <div class="Title" style="background-image: url('../Assets/BG_ALT.png'); background-size: cover; height: 300px; display: flex; justify-content: center; align-items: center;">
-                <h2>CreanBL's Website</h2>
+            <!-- Window Label + Buttons -->
+            <div style="border: 4px rgb(0, 0, 0) ridge; height: 25px; padding: 5px; width: 98%; font-size: 17px; display: flex; vertical-align: middle;">
+
+                <div style="width: 49.9999%; font-size: 17px; display: flex; text-align: left;">
+                    Main Page
+                </div>
+
+                <div style="width: 49.9999%; font-size: 17px; display: flex; text-align: right; justify-content: right;">
+                    <img style="image-rendering: pixelated; border-radius: 2px; padding-right: 2px;" src="../Assets/MinimizeButton.png">
+                    <img style="image-rendering: pixelated; border-radius: 2px; padding-right: 2px;" src="../Assets/MaximiseButton.png">
+                    <img style="image-rendering: pixelated; border-radius: 2px;" src="../Assets/CloseButton.png">
+                </div>
+
             </div>
 
-            <div class="ExtraInfoMobile" style="justify-content: center;">
-                <img src="../Assets/WelcomeBlinkie.gif" style="image-rendering: pixelated;">
-                <img src="../Assets/tModletBlinkie.gif" style="image-rendering: pixelated;">
-            </div>
 
-            <img src="../Assets/CreanBL.png" style="width: 25%; padding: 75px 25px 225px 100px; float: right;">
-            
-            <p>
-                Welcome to my website!<br><br>
-                You'll find my creations, guides, art and information about me here.<br><br>
-                Please take a look around!<br><br>
-                Use the buttons down below or the sidebar on the left to navigate the website.<br><br>
-                This site is best viewed on a big screen like a laptop or desktop for example.<br><br>
-                If you're on mobile, please enable desktop view in your browser. <thought>(Usually found in a triple-dot dropdown.)</thought>
-            </p><br>
 
-            <div style="display: inline-block; width: 100%; height: 225px; justify-content: center; vertical-align: middle; padding-bottom: 200px;">
-                <h1>Navigation</h1><br>
-                <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Creations.html" class="Links" style="margin-top: 50%;">
-                    <img src="../Assets/Creations.png" class="LinkButton">
-                </a>
+            <div class="WindowContainer">
+                <div class="Title" style="background-image: url('../Assets/BG_ALT.png'); background-size: cover; height: 300px; display: flex; justify-content: center; align-items: center;">
+                    <h2>CreanBL's Website</h2>
+                </div>
     
-                <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Blogs.html" class="Links" style="margin-top: 50%;">
-                    <img src="../Assets/Blog.png" class="LinkButton">
-                </a>
+                <div class="ExtraInfoMobile" style="justify-content: center;">
+                    <img src="../Assets/WelcomeBlinkie.gif" style="image-rendering: pixelated;">
+                    <img src="../Assets/tModletBlinkie.gif" style="image-rendering: pixelated;">
+                </div>
     
-                <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Info.html" class="Links" style="margin-top: 50%;">
-                    <img src="../Assets/Info.png" class="LinkButton">
-                </a>
-
-                <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Misc.html" class="Links" style="margin-top: 50%;">
-                    <img src="../Assets/Misc.png" class="LinkButton">
-                </a>
-            </div>
-
-            <div style="display: flexbox; justify-content: left; align-items: center; width: 100%; background-image: url('../Assets/BG03.png'); border-radius: 2px;">
-                <h1 style="padding-top: 20px; margin: 0px;">Articles</h1><br>
-                <iframe src="ArticlesBoxList.html" class="ArticlesBox"></iframe>
-            </div>
-            
-            <div style="display: inline-block; width: 100%; height: 225px; justify-content: center; vertical-align: top; padding-bottom: 100px;">
-                <h1>Other Links</h1><br>
-                    <a href="https://www.youtube.com/@CreanBL" class="Links" target="_blank">
-                        <img src="../Assets/YoutubeLogo.png" class="LinkButton">
+                <img src="../Assets/CreanBL.png" style="width: 25%; padding: 75px 25px 225px 100px; float: right;">
+    
+                <p>
+                    Welcome to my website!<br><br>
+                    You'll find my creations, guides, art and information about me here.<br><br>
+                    Please take a look around!<br><br>
+                    Use the buttons down below or the sidebar on the left to navigate the website.<br><br>
+                    This site is best viewed on a big screen like a laptop or desktop for example.<br><br>
+                    If you're on mobile, please enable desktop view in your browser. <thought>(Usually found in a triple-dot dropdown.)</thought>
+                </p><br>
+    
+                <div style="display: inline-block; width: 100%; height: 225px; justify-content: center; vertical-align: middle; padding-bottom: 200px;">
+                    <h1>Navigation</h1><br>
+                    <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Creations.html" class="Links" style="margin-top: 50%;">
+                        <img src="../Assets/Creations.png" class="LinkButton">
                     </a>
-                    <a href="https://www.youtube.com/@CreanBL2" class="Links" target="_blank">
-                        <img src="../Assets/YoutubeLogo2.png" class="LinkButton">
+        
+                    <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Blogs.html" class="Links" style="margin-top: 50%;">
+                        <img src="../Assets/Blog.png" class="LinkButton">
                     </a>
-                    <a href="https://www.steamcommunity.com/id/CreanBL" class="Links" target="_blank">
-                        <img src="../Assets/SteamLogo.png" class="LinkButton">
+        
+                    <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Info.html" class="Links" style="margin-top: 50%;">
+                        <img src="../Assets/Info.png" class="LinkButton">
                     </a>
-                    <a href="https://www.github.com/CreaamBlob" class="Links" target="_blank">
-                        <img src="../Assets/GithubLogo.png" class="LinkButton">
+    
+                    <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Misc.html" class="Links" style="margin-top: 50%;">
+                        <img src="../Assets/Misc.png" class="LinkButton">
                     </a>
-            </div>
-
-            <div class="ExtraInfoMobile" style="background-color: rgba(158, 103, 1, 0.204); margin-top: 100px;">
-                <h2>My Time:</h2>
-                <p style="background-color: transparent;" id="time2">00:00:00</p>
-
-                <h2 style="margin-bottom: 5px">
-                    <font style="color: gray;">(Private)</font><br>
-                    Questbook:
-                </h2>
-                <form action="https://api.web3forms.com/submit" method="post">
-                    <thought>Feel free to send your own website!</thought><br><br>
+                </div>
     
-                    <input type="hidden" name="access_key" value="ce174ffb-49aa-4f45-968e-42213c024655">
-                    <input type="hidden" name="subject" value="Guestbook Signed">
-                    <input type="text" name="name" style="min-width: 255px; max-width: 255px;" placeholder="Your name (optional)">
+                <div style="display: flexbox; justify-content: center; align-items: center; width: 100%; background-image: url('../Assets/BG03.png'); border-radius: 2px;">
+                    <h1 style="padding-top: 20px; margin: 0px;">Articles</h1><br>
+                    <iframe src="ArticlesBoxList.html" class="ArticlesBox"></iframe>
+                </div>
+                
+                <div style="display: inline-block; width: 100%; height: 225px; justify-content: center; vertical-align: top; padding-bottom: 100px;">
+                    <h1>Other Links</h1><br>
+                        <a href="https://www.youtube.com/@CreanBL" class="Links" target="_blank">
+                            <img src="../Assets/YoutubeLogo.png" class="LinkButton">
+                        </a>
+                        <a href="https://www.steamcommunity.com/id/CreanBL" class="Links" target="_blank">
+                            <img src="../Assets/SteamLogo.png" class="LinkButton">
+                        </a>
+                        <a href="https://www.github.com/CreaamBlob" class="Links" target="_blank">
+                            <img src="../Assets/GithubLogo.png" class="LinkButton">
+                        </a>
+                </div>
     
-                    <br>
-                    <textarea name="message" placeholder="Type a message for me" style="min-width: 255px; max-width: 255px; min-height: 40px; max-height: 120px; font-size: 12px; overflow: auto;" required></textarea>
-                    <br>
+                <div class="ExtraInfoMobile" style="background-color: rgba(158, 103, 1, 0.204); margin-top: 100px;">
+                    <h2>My Time:</h2>
+                    <p style="background-color: transparent;" id="time2">00:00:00</p>
     
-                    <input type="text" placeholder="Type 'Confirm' to proceed" id="botCheck2" style="min-width: 255px; max-width: 255px; font-size: 12px;" required><br>
-                    <input type="hidden" name="redirect" value="https://creaamblob.github.io/CreanBL.github.io/Code/SendSuccess.html">
-                    <button type="submit" id="submitEmail2">Send</button>
-                </form>
-
-                <h2 style="margin-bottom: 5px; font-size: 30px;">Contact me:</h2>
-                <thought>creanblwebsite@gmail.com</thought>
-
+                    <h2 style="margin-bottom: 5px">
+                        <font style="color: gray;">(Private)</font><br>
+                        Questbook:
+                    </h2>
+                    <form action="https://api.web3forms.com/submit" method="post">
+                        <thought>Feel free to send your own website!</thought><br><br>
+        
+                        <input type="hidden" name="access_key" value="ce174ffb-49aa-4f45-968e-42213c024655">
+                        <input type="hidden" name="subject" value="Guestbook Signed">
+                        <input type="text" name="name" style="min-width: 255px; max-width: 255px;" placeholder="Your name (optional)">
+        
+                        <br>
+                        <textarea name="message" placeholder="Type a message for me" style="min-width: 255px; max-width: 255px; min-height: 40px; max-height: 120px; font-size: 12px; overflow: auto;" required></textarea>
+                        <br>
+        
+                        <input type="text" placeholder="Type 'Confirm' to proceed" id="botCheck2" style="min-width: 255px; max-width: 255px; font-size: 12px;" required><br>
+                        <input type="hidden" name="redirect" value="https://creaamblob.github.io/CreanBL.github.io/Code/SendSuccess.html">
+                        <button type="submit" id="submitEmail2">Send</button>
+                    </form>
+    
+                    <h2 style="margin-bottom: 5px; font-size: 30px;">Contact me:</h2>
+                    <thought>creanblwebsite@gmail.com</thought>
+    
+                </div>
             </div>
         </div>
 
@@ -258,33 +279,51 @@
         </script>
 
         <div class="ExtraInfoPC">
-            <img src="../Assets/WelcomeBlinkie.gif" style="image-rendering: pixelated;"><br>
-            <img src="../Assets/tModletBlinkie.gif" style="image-rendering: pixelated;">
 
-            <h2 style="margin-bottom: 5px; font-size: 30px;">Contact me:</h2>
-            <thought>creanblwebsite@gmail.com</thought>
-            <br><br>
-            <h2 style="margin-bottom: 5px">
-                <font style="color: gray;">(Private)</font><br>
-                Questbook:
-            </h2>
-            <form action="https://api.web3forms.com/submit" method="post">
-                <thought>Feel free to send your own website!</thought><br><br>
+            <!-- Window Label + Buttons -->
+            <div style="border: 4px rgb(0, 0, 0) ridge; height: 25px; padding: 5px; width: 96%; font-size: 17px; display: flex; vertical-align: middle;">
 
-                <input type="hidden" name="access_key" value="ce174ffb-49aa-4f45-968e-42213c024655">
-                <input type="hidden" name="subject" value="Guestbook Signed">
-                <input type="text" name="name" style="min-width: 255px; max-width: 255px;" placeholder="Your name (optional)">
+                <div style="width: 49.9999%; font-size: 17px; display: flex; text-align: left;">
+                    Extras
+                </div>
 
-                <br>
-                <textarea name="message" placeholder="Type a message for me" style="min-width: 255px; max-width: 255px; min-height: 40px; max-height: 120px; font-size: 12px; overflow: auto;" required></textarea>
-                <br>
+                <div style="width: 49.9999%; font-size: 17px; display: flex; text-align: right; justify-content: right;">
+                    <img style="image-rendering: pixelated; border-radius: 2px; padding-right: 2px;" src="../Assets/MinimizeButton.png">
+                    <img style="image-rendering: pixelated; border-radius: 2px; padding-right: 2px;" src="../Assets/MaximiseButton.png">
+                    <img style="image-rendering: pixelated; border-radius: 2px;" src="../Assets/CloseButton.png">
+                </div>
 
-                <input type="text" placeholder="Type 'Confirm' to proceed" id="botCheck" style="min-width: 255px; max-width: 255px; font-size: 12px;" required><br>
-                <input type="hidden" name="redirect" value="https://creaamblob.github.io/CreanBL.github.io/Code/SendSuccess.html">
-                <button type="submit" id="submitEmail">Send</button>
-            </form>
-            <h2>My Time:</h2>
-            <p id="time">00:00:00</p><br>
+            </div>
+
+            <div class="WindowContainer">
+                <img src="../Assets/WelcomeBlinkie.gif" style="image-rendering: pixelated;">
+                <img src="../Assets/tModletBlinkie.gif" style="image-rendering: pixelated;">
+    
+                <h2 style="margin-bottom: 5px; font-size: 30px;">Contact me:</h2>
+                <thought>creanblwebsite@gmail.com</thought>
+                <br><br>
+                <h3 style="margin-bottom: 5px">
+                    <font style="color: gray;">(Private)</font><br>
+                    Questbook:
+                </h3>
+                <form action="https://api.web3forms.com/submit" method="post">
+                    <thought>Feel free to send your own website!</thought><br><br>
+    
+                    <input type="hidden" name="access_key" value="ce174ffb-49aa-4f45-968e-42213c024655">
+                    <input type="hidden" name="subject" value="Guestbook Signed">
+                    <input type="text" name="name" style="min-width: 255px; max-width: 255px;" placeholder="Your name (optional)">
+    
+                    <br>
+                    <textarea name="message" placeholder="Type a message for me" style="min-width: 255px; max-width: 255px; min-height: 40px; max-height: 120px; font-size: 12px; overflow: auto;" required></textarea>
+                    <br>
+    
+                    <input type="text" placeholder="Type 'Confirm' to proceed" id="botCheck" style="min-width: 255px; max-width: 255px; font-size: 12px;" required><br>
+                    <input type="hidden" name="redirect" value="https://creaamblob.github.io/CreanBL.github.io/Code/SendSuccess.html">
+                    <button type="submit" id="submitEmail">Send</button>
+                </form>
+                <h2>My Time:</h2>
+                <p id="time">00:00:00</p><br>
+            </div>
         </div>
     </center>
     </body>

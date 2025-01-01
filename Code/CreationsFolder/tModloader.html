@@ -18,6 +18,7 @@
             border: 4px white solid;
             border-radius: 2px;
             padding-top: 25px;
+            margin-bottom: -75px;
         }
         .Video {
             border-radius: 2px;
@@ -30,201 +31,216 @@
     </style>
     <body>
         <linktab>
-            <div style="display: grid;" id="linktabElements">
-                <h4 style="font-size: 15px;">Crean UI 1.0</h4>
-                <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Main.html">
-                    <img src="../../Assets/Home.png" class="LinkButtonSmol">
-                </a>
+            <div style="display: grid; justify-content: center;">
+                <h4 style="font-size: 15px; color: white;">Crean UI 1.0</h4>
 
-                <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Creations.html">
-                    <img src="../../Assets/Creations.png" class="LinkButtonSmol">
-                </a>
-
-                <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Blogs.html">
-                    <img src="../../Assets/Blog.png" class="LinkButtonSmol">
-                </a>
-                <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Info.html">
-                    <img src="../../Assets/Info.png" class="LinkButtonSmol">
-                </a>
-                <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Misc.html">
-                    <img src="../../Assets/Misc.png" class="LinkButtonSmol">
-                </a>
-
-                <br>
-                -
-                <br>
-
-                <a href="https://www.youtube.com/@CreanBL">
-                    <img src="../../Assets/YoutubeLogo.png" class="LinkButtonSmol">
-                </a>
-
-                <a href="https://www.steamcommunity.com/id/CreanBL">
-                    <img src="../../Assets/SteamLogo.png" class="LinkButtonSmol">
-                </a>
-
-                <a href="https://www.github.com/CreaamBlob">
-                    <img src="../../Assets/GithubLogo.png" class="LinkButtonSmol">
-                </a>
+                <div class="WindowContainer" style="max-width: 150px; min-height: 92.5%; max-height: 92.5%;">
+                    <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Main.html">
+                        <img src="../../Assets/Home.png" class="LinkButtonSmol">
+                    </a>
+    
+                    <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Creations.html">
+                        <img src="../../Assets/Creations.png" class="LinkButtonSmol">
+                    </a>
+    
+                    <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Blogs.html">
+                        <img src="../../Assets/Blog.png" class="LinkButtonSmol">
+                    </a>
+                    <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Info.html">
+                        <img src="../../Assets/Info.png" class="LinkButtonSmol">
+                    </a>
+                    <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Misc.html">
+                        <img src="../../Assets/Misc.png" class="LinkButtonSmol">
+                    </a>
+    
+                    <br>
+                    -
+                    <br>
+    
+                    <a href="https://www.youtube.com/@CreanBL">
+                        <img src="../../Assets/YoutubeLogo.png" class="LinkButtonSmol">
+                    </a>
+    
+                    <a href="https://www.steamcommunity.com/id/CreanBL">
+                        <img src="../../Assets/SteamLogo.png" class="LinkButtonSmol">
+                    </a>
+    
+                    <a href="https://www.github.com/CreaamBlob">
+                        <img src="../../Assets/GithubLogo.png" class="LinkButtonSmol">
+                    </a>
+                </div>
+                
             </div>
         </linktab>
+
         <center>
-            <br><br>
-        <div class="TextBox" style="max-width: 1200px;">
-            <div class="Title">
-                <h2>My Creations</h2>
-            </div>
+        <br><br>
+        <div class="RetroWindow" style="max-width: 1200px;">
+                <!-- Window Label + Buttons -->
+                <div style="border: 4px rgb(0, 0, 0) ridge; height: 25px; padding: 5px; width: 97%; font-size: 17px; display: flex; vertical-align: middle;">
 
-            <p>Collection of things I have created
-            in the Terraria Modding API called</p>
-            <img src="../../Assets/tModloader.png"><br><br>
-            <p>Mainly stuff from my content mod called 'Transcendent Mod' <img src="../../Assets/Creations/TranscendentMod.png" style="vertical-align: middle;"> <br>
-                <thought>The 'transcendent' in the name is based on the main biome of the mod, the Transcendent Abyss.</thought>
-            </p>
-            <p>Hover over videos to enlarge them.</p>
-            <p>Click on the above the videos to open the video in a new window.</p>
+                    <div style="width: 49.9999%; font-size: 17px; display: flex; text-align: left;">
+                        Creations > tModloader
+                    </div>
+                    
+                    <div style="width: 49.9999%; font-size: 17px; display: flex; text-align: right; justify-content: right;">
+                        <img style="image-rendering: pixelated; border-radius: 2px; padding-right: 2px;" src="../../Assets/MinimizeButton.png">
+                        <img style="image-rendering: pixelated; border-radius: 2px; padding-right: 2px;" src="../../Assets/MaximiseButton.png">
+                        <img style="image-rendering: pixelated; border-radius: 2px;" src="../../Assets/CloseButton.png">
+                    </div>
+                </div>
 
-            <div class="VideoContainer">
-                Cosmic Rarity<br>
-                <p>A custom rarity I made for Transcendent Abyss and Post-Seraph items.</p>
-                <a href="../../Assets/Creations/CelestialRarity.mp4">
-                    <p>Link</p>
-                    <video width="600" height="300" controls loop class="Video">
-                        <source src="../../Assets/Creations/CelestialRarity.mp4" type="video/mp4">
-                    </video>
-                </a><br>
-
-                Cosmic Fields<br>
-                <p>
-                    A landmark which marks the location of the Transcendent Abyss/Ascendant Realm<br>
-                    The biome will be overridden by other biomes' terrain,<br>
-                    you can see an example in the image below.<br>
-                    Contains some chests, life crystals and hot springs.<br>
-                    These hot springs will regenerate your life faster and can be fished on to obtain cosmic fishes and gear.<br>
-                    <img src="../../Assets/Creations/CosmicFields.png" style="vertical-align: middle;" width="800px"><br>
-                    <font style="font-size: 25px;">Current Daytime Theme<br>
-                        <audio src="../../Assets/Creations/CosmicFieldDay.ogg" controls></audio><br>
-                    <font style="font-size: 25px;">Current Nighttime Theme<br>
-                        <audio src="../../Assets/Creations/CosmicFieldNight.ogg" controls></audio><br>
-                    <thought>(sorry if they're ass, I suck at music)</thought><br>
-                </p>
-
-                Transcendent Abyss<br>
-                <p>
-                    An eerie, hostile and dark place filled with cosmic fauna.<br>
-                    Being in the abyss without an astronaut helmet will suffocate you, making you far weaker.<br>
-                    The abyss can be found above the Cosmic Fields.<br>
-                    Houses the cosmic archangel, who can be summoned at the abandoned <font style="color: magenta;">Cosmic Cathedral</font>.<br>
-                    Visiting the abyss at midnight might have some surprises...<br>
-                    <font style="font-size: 25px;">Current theme of the abyss<br>
-                    <audio src="../../Assets/Creations/NullAbyss.ogg" controls></audio><br>
-                    <thought>(sorry if it's ass, I suck at music)</thought><br>
-                </p>
-                </p>
-                <a href="../../Assets/Creations/TranscendantAbyss.mp4">
-                    <p>Link</p>
-                    <video width="600" height="300" controls loop class="Video">
-                        <source src="../../Assets/Creations/TranscendantAbyss.mp4" type="video/mp4">
-                    </video>
-                </a><br>
-
-                Bright Galaxy Summon<br>
-                <p>A summon weapon dropped by the Celestial Seraph, the current final boss of my mod.<br></p>
-                <p style="color: gray; font-size: 12px;">Summons a miniature galaxy to obliterate enemies<br>
-					The galaxy becomes bigger and faster the more you summon<br>
-					Right Click to turn the galaxy into a shield that can block up to 7 projectiles<br>
-					The shield has a 15 second cooldown after breaking
-                </p>
-                <a href="../../Assets/Creations/GalaxySummon.mp4">
-                    <p>Link</p>
-                    <video width="600" height="300" controls loop class="Video">
-                        <source src="../../Assets/Creations/GalaxySummon.mp4" type="video/mp4">
-                    </video>
-                </a><br>
-                
-                Celestial Seraph Arena Boundaries<br>
-                <p>
-                    Boundary used by the Celestial Seraph in some of his attacks.<br>
-                    The fog changes colour depending on the attack and the stars can be hooked on.
-                </p>
-                <a href="../../Assets/Creations/SeraphArena.mp4">
-                    <p>Link</p>
-                    <video width="600" height="300" controls loop class="Video">
-                        <source src="../../Assets/Creations/SeraphArena.mp4" type="video/mp4">
-                    </video>
-                </a><br>
-
-                The Volcanic Layer<br>
-                <p>
-                    A biome introduced by my mod that covers the region between Caverns and Hell.<br>
-                    Contains hellstone, carbon, ruby and new dangerous enemies.<br>
-                    The rocks will set you on fire, so be careful where you step, or use an obsidian skull.
-                </p>
-                <a href="../../Assets/Creations/VolcanicLayer.mp4">
-                    <p>Link</p>
-                    <video width="600" height="300" controls loop class="Video">
-                        <source src="../../Assets/Creations/VolcanicLayer.mp4" type="video/mp4">
-                    </video>
-                </a><br>
-
-                Parrying<br>
-                <p>
-                    A mechanic added by my mod, that allows you to block attacks when timed perfectly.<br>
-                    You require a shield to parry, and you can obtain shields everywhere in the game from Pre-Boss to Post-Seraph.<br>
-                    <font style="color: gray; font-size: 12px;">(Omg that Sniper Rifle drop, how lucky!)</font>
-                </p>
-                <a href="../../Assets/Creations/Parrying.mp4">
-                    <p>Link</p>
-                    <video width="600" height="300" controls loop class="Video">
-                        <source src="../../Assets/Creations/Parrying.mp4" type="video/mp4">
-                    </video>
-                </a><br>
-
-                Laser Mining!<br>
-                <p>
-                    A Post-Moonlord pickaxe from my mod, that doesn't dig fast, but creates connecting laser nodes.
-                    These laser nodes clear any tile between them<br>
-                </p>
-                <a href="../../Assets/Creations/LaserMining.mp4">
-                    <p>Link</p>
-                    <video width="600" height="300" controls loop class="Video">
-                        <source src="../../Assets/Creations/LaserMining.mp4" type="video/mp4">
-                    </video>
-                </a><br>
-
-                Tinkerer NPC<br>
-                <p>
-                    A Town-NPC that moves in after obtaining a modifier item.<br>
-                    She allows you to apply modifiers onto items and craft new items with upgrade items.<br>
-                    The prices are really high, but your items get a <font style="color:gold">75% discount</font> for any future changes.<br>
-                    You can obtain her phone number later in the game, allowing you to use her services remotely. <font style="color: gray; font-size: 12px;">(With a higher price, of course.)</font>
-                </p>
-                <a href="../../Assets/Creations/Tinkerer.mp4">
-                    <p>Link</p>
-                    <video width="600" height="300" controls loop class="Video">
-                        <source src="../../Assets/Creations/Tinkerer.mp4" type="video/mp4">
-                    </video>
-                </a><br>
-
-                Destroyer Rework<br>
-                <p>
-                    A rework for the Destroyer bossfight, this is for a completely seperate mod than the ones above.<br>
-                    The fight is extremely fun <thought>(atleast for me)</thought>, despite being very repetive.<br>
-                    The mod's development is currently paused, because making Worm AI code for the game frustrated me way too much.<br>
-                    In the meanwhile, you can download the resource pack I made for this rework<br>
-                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3326630143">Download it here</a>
-                </p>
-                <iframe width="600px" height="300px" style="border-radius: 10px;" src="https://www.youtube.com/embed/C5qhe49fM3I?si=N-X2xHYKRl3Xf9zW" allowfullscreen></iframe><br>
-
-                Atmospheron<br>
-                <p>
-                    Back to Transcendent Mod, the Atmospheron is a weather themed dragon with a fast-paced fight.<br>
-                    The boss has three phases:<br>
-                    - In the first phase it follows a set pattern and has 3 maxium stamina.<br><br>
-                    - In the second phase it has a random pattern and has 3/<font style="color: orange;">infinite (Expert and above)</font><br><br>
-                    - The final phase is kinda like Duke Fishron's, it teleports in a random direction and lunges at the player extremely fast 1/3/2 times.<br><br>
-                    I haven't really finished the boss yet, I'll update this section when it is.
-                </p>
-                <iframe width="600px" height="300px" style="border-radius: 10px;" src="https://www.youtube.com/embed/-D2uMk5WL0w?si=3CTlRsSjWpXyJ-EJ" allowfullscreen></iframe><br>
+                <div class="WindowContainer">
+                    <p>Collection of things I have created
+                        in the Terraria Modding API called</p>
+                        <img src="../../Assets/tModloader.png"><br><br>
+                        <p>Mainly stuff from my content mod called 'Transcendent Mod' <img src="../../Assets/Creations/TranscendentMod.png" style="vertical-align: middle;"> <br>
+                            <thought>The 'transcendent' in the name is based on the main biome of the mod, the Transcendent Abyss.</thought>
+                        </p>
+                        <p>Hover over videos to enlarge them.</p>
+                        <p>Click on the above the videos to open the video in a new window.</p>
+            
+                        <div class="VideoContainer">
+                            Cosmic Rarity<br>
+                            <p>A custom rarity I made for Transcendent Abyss and Post-Seraph items.</p>
+                            <a href="../../Assets/Creations/CelestialRarity.mp4">
+                                <p>Link</p>
+                                <video width="600" height="300" controls loop class="Video">
+                                    <source src="../../Assets/Creations/CelestialRarity.mp4" type="video/mp4">
+                                </video>
+                            </a><br>
+            
+                            Cosmic Fields<br>
+                            <p>
+                                A landmark which marks the location of the Transcendent Abyss/Ascendant Realm<br>
+                                The biome will be overridden by other biomes' terrain,<br>
+                                you can see an example in the image below.<br>
+                                Contains some chests, life crystals and hot springs.<br>
+                                These hot springs will regenerate your life faster and can be fished on to obtain cosmic fishes and gear.<br>
+                                <img src="../../Assets/Creations/CosmicFields.png" style="vertical-align: middle;" width="800px"><br>
+                                <font style="font-size: 25px;">Current Theme<br>
+                                    <audio src="../../Assets/Creations/CosmicField.ogg" controls></audio><br>
+                                <thought>(sorry if it's ass, I suck at music)</thought><br>
+                            </p>
+            
+                            Transcendent Abyss<br>
+                            <p>
+                                An eerie, hostile and dark place filled with cosmic fauna.<br>
+                                Being in the abyss without an astronaut helmet will suffocate you, making you far weaker.<br>
+                                The abyss can be found above the Cosmic Fields.<br>
+                                Houses the cosmic archangel, who can be summoned at the abandoned <font style="color: magenta;">Cosmic Cathedral</font>.<br>
+                                Visiting the abyss at midnight might have some surprises...<br>
+                                <font style="font-size: 25px;">Current theme of the abyss<br>
+                                <audio src="../../Assets/Creations/NullAbyss.ogg" controls></audio><br>
+                                <thought>(sorry if it's ass, I suck at music)</thought><br>
+                            </p>
+                            </p>
+                            <a href="../../Assets/Creations/TranscendantAbyss.mp4">
+                                <p>Link</p>
+                                <video width="600" height="300" controls loop class="Video">
+                                    <source src="../../Assets/Creations/TranscendantAbyss.mp4" type="video/mp4">
+                                </video>
+                            </a><br>
+            
+                            Bright Galaxy Summon<br>
+                            <p>A summon weapon dropped by the Celestial Seraph, the current final boss of my mod.<br></p>
+                            <p style="color: gray; font-size: 12px;">Summons a miniature galaxy to obliterate enemies<br>
+                                The galaxy becomes bigger and faster the more you summon<br>
+                                Right Click to turn the galaxy into a shield that can block up to 7 projectiles<br>
+                                The shield has a 15 second cooldown after breaking
+                            </p>
+                            <a href="../../Assets/Creations/GalaxySummon.mp4">
+                                <p>Link</p>
+                                <video width="600" height="300" controls loop class="Video">
+                                    <source src="../../Assets/Creations/GalaxySummon.mp4" type="video/mp4">
+                                </video>
+                            </a><br>
+                            
+                            Celestial Seraph Arena Boundaries<br>
+                            <p>
+                                Boundary used by the Celestial Seraph in some of his attacks.<br>
+                                The fog changes colour depending on the attack and the stars can be hooked on.
+                            </p>
+                            <a href="../../Assets/Creations/SeraphArena.mp4">
+                                <p>Link</p>
+                                <video width="600" height="300" controls loop class="Video">
+                                    <source src="../../Assets/Creations/SeraphArena.mp4" type="video/mp4">
+                                </video>
+                            </a><br>
+            
+                            The Volcanic Layer<br>
+                            <p>
+                                A biome introduced by my mod that covers the region between Caverns and Hell.<br>
+                                Contains hellstone, carbon, ruby and new dangerous enemies.<br>
+                                The rocks will set you on fire, so be careful where you step, or use an obsidian skull.
+                            </p>
+                            <a href="../../Assets/Creations/VolcanicLayer.mp4">
+                                <p>Link</p>
+                                <video width="600" height="300" controls loop class="Video">
+                                    <source src="../../Assets/Creations/VolcanicLayer.mp4" type="video/mp4">
+                                </video>
+                            </a><br>
+            
+                            Parrying<br>
+                            <p>
+                                A mechanic added by my mod, that allows you to block attacks when timed perfectly.<br>
+                                You require a shield to parry, and you can obtain shields everywhere in the game from Pre-Boss to Post-Seraph.<br>
+                                <font style="color: gray; font-size: 12px;">(Omg that Sniper Rifle drop, how lucky!)</font>
+                            </p>
+                            <a href="../../Assets/Creations/Parrying.mp4">
+                                <p>Link</p>
+                                <video width="600" height="300" controls loop class="Video">
+                                    <source src="../../Assets/Creations/Parrying.mp4" type="video/mp4">
+                                </video>
+                            </a><br>
+            
+                            Laser Mining!<br>
+                            <p>
+                                A Post-Moonlord pickaxe from my mod, that doesn't dig fast, but creates connecting laser nodes.
+                                These laser nodes clear any tile between them<br>
+                            </p>
+                            <a href="../../Assets/Creations/LaserMining.mp4">
+                                <p>Link</p>
+                                <video width="600" height="300" controls loop class="Video">
+                                    <source src="../../Assets/Creations/LaserMining.mp4" type="video/mp4">
+                                </video>
+                            </a><br>
+            
+                            Tinkerer NPC<br>
+                            <p>
+                                A Town-NPC that moves in after obtaining a modifier item.<br>
+                                She allows you to apply modifiers onto items and craft new items with upgrade items.<br>
+                                The prices are really high, but your items get a <font style="color:gold">75% discount</font> for any future changes.<br>
+                                You can obtain her phone number later in the game, allowing you to use her services remotely. <font style="color: gray; font-size: 12px;">(With a higher price, of course.)</font>
+                            </p>
+                            <a href="../../Assets/Creations/Tinkerer.mp4">
+                                <p>Link</p>
+                                <video width="600" height="300" controls loop class="Video">
+                                    <source src="../../Assets/Creations/Tinkerer.mp4" type="video/mp4">
+                                </video>
+                            </a><br>
+            
+                            Destroyer Rework<br>
+                            <p>
+                                A rework for the Destroyer bossfight, this is for a completely seperate mod than the ones above.<br>
+                                The fight is extremely fun <thought>(atleast for me)</thought>, despite being very repetive.<br>
+                                The mod's development is currently paused, because making Worm AI code for the game frustrated me way too much.<br>
+                                In the meanwhile, you can download the resource pack I made for this rework<br>
+                                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3326630143">Download it here</a>
+                            </p>
+                            <iframe width="600px" height="300px" style="border-radius: 10px;" src="https://www.youtube.com/embed/C5qhe49fM3I?si=N-X2xHYKRl3Xf9zW" allowfullscreen></iframe><br>
+            
+                            Atmospheron<br>
+                            <p>
+                                Back to Transcendent Mod, the Atmospheron is a weather themed dragon with a fast-paced fight.<br>
+                                The boss has three phases:<br>
+                                - In the first phase it follows a set pattern and has 3 maxium stamina.<br><br>
+                                - In the second phase it has a random pattern and has 3/<font style="color: orange;">infinite (Expert and above)</font><br><br>
+                                - The final phase is kinda like Duke Fishron's, it teleports in a random direction and lunges at the player extremely fast 1/3/2 times.<br><br>
+                                I haven't really finished the boss yet, I'll update this section when it is.
+                            </p>
+                            <iframe width="600px" height="300px" style="border-radius: 10px;" src="https://www.youtube.com/embed/-D2uMk5WL0w?si=3CTlRsSjWpXyJ-EJ" allowfullscreen></iframe><br>
+                </div>
             </div>
         </h1>
         </div>

@@ -72,21 +72,21 @@ a:visited {
 }
 linktab {
     width: 110px;
-    height: 100%;
+    height: 99.25%;
     position: fixed;
     top: 0%;
     left: -70px;
-    background-color: black;
+
+    background-image: linear-gradient(to bottom, rgb(3, 76, 145), rgb(18, 18, 119),rgb(18, 18, 119),rgb(18, 18, 119) );
+    box-shadow: 0px 0px 10px deepskyblue;
+    border: 4px deepskyblue ridge;
+
     vertical-align: middle;
     transition: 0.5s;
 }
 linktab:hover {
     width: 220px;
-    height: 100%;
     left: -3px;
-    background-image: url(../Assets/BG.png);
-    background-size: cover;
-    border: 2px white solid;
 }
 textarea {
     cursor: url('../Assets/Cursor.png') 11 8, auto;
@@ -104,6 +104,37 @@ button {
     border: 2px white solid;
     color: white;
     cursor: url('../Assets/Cursor_Hover.png') 18 9, auto;
+}
+audio {
+    background-color: gray;
+
+    box-shadow: 0px 0px 10px gray;
+    border: 4px gray ridge;
+}
+.WindowContainer {
+    background-image: url('../Assets/BG04.png');
+    padding: 10px 10px 100px;
+    margin-top: 10px;
+
+    box-shadow: 0px 0px 10px gray;
+    border: 4px gray ridge;
+}
+.RetroWindow {
+    background-image: linear-gradient(to bottom, rgb(3, 76, 145), rgb(18, 18, 119),rgb(18, 18, 119),rgb(18, 18, 119) );
+    box-shadow: 0px 0px 10px deepskyblue;
+    border: 4px deepskyblue ridge;
+
+    vertical-align:middle;
+    max-width: 1025px;
+    display: inline-block;
+
+    padding: 15px 5px 15px;
+    border-radius: 12.5px;
+
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: WanderersLost, Courier, monospace;
 }
 .TextBox {
     background-color: #000000;
