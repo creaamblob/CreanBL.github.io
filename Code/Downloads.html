@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Misc | Crean's Website</title>
-        <link rel="icon" href="../Assets/Misc.png"/>
+        <title>Downloads | Crean's Website</title>
+        <link rel="icon" href="../Assets/Download.png"/>
         <link rel="stylesheet" href="style.css" rel="stylesheet"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>
@@ -13,6 +13,33 @@
             font-family: WanderersLost;
             font-size: 17px;
             background-color: rgba(158, 103, 1, 0.204);
+        }
+        a {
+            text-decoration: none !important;
+        }
+        .Download {
+            background-color: rgb(48, 42, 63);
+            width: 300px;
+            text-align: left;
+            vertical-align: middle;
+            font-size: 20px;
+            color: white;
+            background-repeat: no-repeat;
+            background-position-x: right;
+            margin: 15px;
+            padding: 10px;
+            box-shadow: 0px 0px 10px rgb(255, 255, 255);
+            border: 4px rgb(255, 255, 255) ridge;
+            transition: 0.5s;
+        }
+        .Download:hover {
+            transform: scale(1.4);
+        }
+        .DownloadsContainer {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
         }
     </style>
 
@@ -62,12 +89,12 @@
 
         <center>
             <br><br>
-            <div class="RetroWindow" style="max-width: 850px; height: 670px;">
+            <div class="RetroWindow" style="max-width: 825px; height: 670px;">
                 <!-- Window Label + Buttons -->
                 <div style="border: 4px rgb(0, 0, 0) ridge; height: 25px; padding: 5px; width: 97%; font-size: 17px; display: flex; vertical-align: middle;">
 
-                    <div style="width: 49.9999%; font-size: 17px; display: flex; text-align: left;">
-                        Miscannellous
+                    <div style="width: 49.9999%; font-size: 12px; display: flex; margin-top: 4px; text-align: left;">
+                        Miscannellous > Downloads
                     </div>
                     
                     <div style="width: 49.9999%; font-size: 17px; display: flex; text-align: right; justify-content: right;">
@@ -77,18 +104,19 @@
                     </div>
                 </div>
                 
-                <div class="WindowContainer" style="padding-bottom: 50px;">
+                <div class="WindowContainer" style="padding-bottom: 0px; height: 90%;">
                     <p>
-                        Miscannellous things.<br>
-                        Might get updated in 3-5 business days.
-                    </p>
-                    <div style="display: flex; justify-content: center; padding-bottom: 160px;">
-                        <div style="float: left; width: 300px;">
-                            <h3>Downloads</h3><br>
-                            <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Downloads.html" class="Links">
-                                <img src="../Assets/Download.png" class="LinkButton">
-                            </a>
-                        </div>
+                        Download totally not malicious files!
+                    </p><br>
+                    <div class="DownloadsContainer">
+
+                        <a href="../Assets/Downloads/BloodshedPlus.tmod">
+                            <div class="Download" style="background-image: url('../Assets/Downloads/BloodshedPlus.png');">
+                                <font style="vertical-align: middle;">Bloodshed+</font><br>
+                                <thought>A Terraria 1.4.4 mod<br> that revamps blood<br> particles.</thought> 
+                            </div>
+                        </a>
+
                     </div>
                 </div>
             </div>

@@ -80,7 +80,7 @@
             <br><br>
             <div class="RetroWindow">
                 <!-- Window Label + Buttons -->
-                <div style="border: 4px rgb(0, 0, 0) ridge; height: 25px; padding: 5px; width: 97%; font-size: 17px; display: flex; vertical-align: middle;">
+                <div style="border: 4px rgb(0, 0, 0) ridge; height: 25px; padding: 5px; width: 98.5%; font-size: 17px; display: flex; vertical-align: middle;">
 
                     <div style="width: 49.9999%; font-size: 12px; display: flex; text-align: left; margin-top: 6px;">
                         Creations > Art
@@ -93,11 +93,11 @@
                     </div>
                 </div>
 
-                <div class="WindowContainer">
-                    <p>Collection of art I have created for various projects.</p>
-                <p>Mainly stuff I've made for my tModloader mods.</p>
+                <div class="WindowContainer" style="width: 1000px;">
+                    <p>Collection of art I have created.</p>
 
-                <div class="table">
+                <button onclick="ChangeDetailsVisibility('PixelArt')" style="padding: 20px; width: 320px; font-size: 20px;">Pixel Art</button>
+                <div class="table" id="PixelArt">
                     <div class="row">
                         <img src="../../Assets/Creations/Art/CelestialAegis.png">
                         <img src="../../Assets/Creations/Art/GigaComet.png">
@@ -177,8 +177,22 @@
                         <img src="../../Assets/Creations/Art/UFO.png">
                         <img src="../../Assets/Creations/Art/SeraphicCrystalTile.png">
                     </div>
-                </div>
+                </div><br><br>
+                <button onclick="ChangeDetailsVisibility('HighRes')" style="padding: 20px; width: 320px; font-size: 20px; color: rgb(61, 61, 61);">High-Res Art</button>
             </div>
+            <script>
+                document.getElementById("PixelArt").style.display = "none"
+                function ChangeDetailsVisibility(type) {
+                    if (type == "PixelArt") {
+                        if (document.getElementById("PixelArt").style.display == "none") {
+                            document.getElementById("PixelArt").style.display = "";
+                        }
+                        else {
+                            document.getElementById("PixelArt").style.display = "none";
+                        }
+                    }
+                }
+            </script>
         </center>
     </body>
 </html>
