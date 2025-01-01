@@ -59,7 +59,7 @@
 
         <center>
             <br><br>
-            <div class="RetroWindow" style="width: 850px;">
+            <div class="RetroWindow" style="width: 860px;">
                 <!-- Window Label + Buttons -->
                 <div style="border: 4px rgb(0, 0, 0) ridge; height: 25px; padding: 5px; width: 97%; font-size: 17px; display: flex; vertical-align: middle;">
 
@@ -134,7 +134,7 @@
             function ChangePreviewAutomatically() {
                 console.log(String(changePageTimer));
                 changePageTimer += 1;
-                if (changePageTimer > 850) {
+                if (changePageTimer > 845) {
                     switch (curPreview) {
                         case 1: ChangePreview(2); break;
                         case 2: ChangePreview(1); break;
@@ -142,7 +142,7 @@
 
                     changePageTimer = 0;
                 }
-                document.getElementById("PreviewChangeBar").style.width = (String)(850 - changePageTimer) + "px";
+                document.getElementById("PreviewChangeBar").style.width = (String)(835 - changePageTimer) + "px";
             }
 
             function ChangePreview(goPreview) {
