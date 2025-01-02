@@ -52,34 +52,41 @@ a:visited {
     text-decoration: none;
 }
 .LinkButton {
-    width: 168px;
-    height: 168px;
+    width: 126px;
+    height: 126px;
+    transform: scale(1.33);
     image-rendering: pixelated;
     transition: 0.5s;
     background-color: transparent;
     border-radius: 2px;
+    margin: 0px 25px 0px 25px;
     cursor: url('../Assets/Cursor_Hover.png') 18 9, pointer;
 }
 .LinkButton:hover {
     transform: scale(1.5);
-    margin: 0px 50px 0px 50px;
     background-color: rgba(255, 255, 255, 0.404);
 }
 .LinkButtonSmol {
     width: 72px;
     height: 72px;
     image-rendering: pixelated;
+    margin: 5px 0px 5px;
     transition: 0.25s;
     border-radius: 2px;
     cursor: url('../Assets/Cursor_Hover.png') 18 9, pointer;
 }
 .LinkButtonSmol:hover {
-    transform: scale(1.33);
+    transform: scale(1.5);
     background-color: rgba(255, 255, 255, 0.404);
+}
+@media screen and (max-width: 900px) {
+    linktab {
+        display: none;
+    }
 }
 linktab {
     width: 110px;
-    height: 99.25%;
+    height: 99.125%;
     position: fixed;
     top: 0%;
     left: -70px;
@@ -132,7 +139,7 @@ audio {
     border: 4px deepskyblue ridge;
 
     vertical-align:middle;
-    max-width: 1025px;
+    max-width: 1075px;
     display: inline-block;
 
     padding: 15px 5px 15px;
