@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html><div class="SmallScreenWarn">
+        <div class="SmallScreenContain">
+            Your screen is too small!
+            Please enable desktop mode in your browser!
+            (Usually found in a triple-dot dropdown)
+        </div>
+    </div>
+    <div class="SmallScreenWarn">
+        <div class="SmallScreenContain">
+            Your screen is too small!<br>
+            Please stretch the window or enable desktop mode in your browser!<br>
+            (Usually found in a triple-dot dropdown)
+        </div>
+    </div>
     <head>
         <title>Crean's Website</title>
         <link rel="icon" href="../Assets/Home.png"/>
         <link rel="stylesheet" href="style.css" rel="stylesheet"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    </head><img src="../Assets/CRT.gif" class="CRT">
+    </head>
+    <img src="../Assets/CRT.gif" class="CRT">
     <style>
         @font-face { font-family: WanderersLost; src: url('../Assets/WandererLost\ Font.ttf'); }
         p {
@@ -13,7 +27,7 @@
             font-size: 22px;
             padding: 5px;
             background-color: rgba(158, 103, 1, 0.204);
-            border-radius: 4px;
+            border-radius: 2px;
         }
         input {
             font-family: WanderersLost;
@@ -84,6 +98,14 @@
             text-align: center;
             font-family: WanderersLost, Courier, monospace;
         }
+        .StartParaBox {
+            width: 100%;
+            height: 500px;
+            background-color: rgba(158, 103, 1, 0.204);
+            display: flex;
+            vertical-align: middle;
+            justify-content: center;
+        }
         @media screen and (max-width: 1600px) {
             .ExtraInfoPC {
                 display: none;
@@ -153,7 +175,6 @@
                     <img style="image-rendering: pixelated; border-radius: 2px; padding-right: 2px;" src="../Assets/MaximiseButton.png">
                     <img style="image-rendering: pixelated; border-radius: 2px;" src="../Assets/CloseButton.png">
                 </div>
-
             </div>
 
 
@@ -168,16 +189,18 @@
                     <img src="../Assets/tModletBlinkie.gif" style="image-rendering: pixelated;">
                 </div><br>
 
-                <div style="width: 100%; height: 500px; background-color: rgba(158, 103, 1, 0.204); display: flex; vertical-align: middle; justify-content: center;">
-                    <p style="background-color: transparent;">
-                        Welcome to my website!<br><br>
-                        You'll find my creations, guides, art and information about me here.<br><br>
-                        Please take a look around!<br><br>
-                        Use the buttons down below or the sidebar on the left to navigate the website.<br><br>
-                        This site is best viewed on a big screen like a TV or a monitor for example.<br><br>
-                        If you're on mobile, please enable desktop view in your browser. <thought>(Usually found in a triple-dot dropdown.)</thought>
-                    </p>
-                    <div style="display: flex; vertical-align: middle; width: 75%; height: 500px;">
+                <div class="StartParaBox">
+                    <div style="display: flex; vertical-align: middle; width: 85%; height: 100%;">
+                        <p style="background-color: transparent; margin: auto; vertical-align: middle; font-size: 18px;">
+                            Welcome to my website!<br><br>
+                            You'll find my creations, guides, art and information about me here.<br><br>
+                            Please take a look around!<br><br>
+                            Use the buttons down below or the sidebar on the left to navigate the website.<br><br>
+                            This site is best viewed on a big screen like a TV or a monitor for example.<br><br>
+                            If you're on mobile, please enable desktop view in your browser. <thought>(Usually found in a triple-dot dropdown.)</thought>
+                        </p>
+                    </div>
+                    <div style="display: flex; vertical-align: middle; width: 75%; height: 100%;">
                         <img src="../Assets/Creations/Art/Budige.png" style="vertical-align: middle;" class="Me">
                     </div>
                 </div>
