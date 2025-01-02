@@ -19,14 +19,17 @@ body {
 h1 {
     text-underline-offset: 12px;
     text-decoration: underline;
+    transition: 0.25s;
 }
 h2 {
     text-underline-offset: 12px;
     text-decoration: underline;
+    transition: 0.25s;
 }
 h3 {
     text-underline-offset: 12px;
     text-decoration: underline;
+    transition: 0.25s;
 }
 a:link {
     color: deepskyblue;
@@ -39,6 +42,16 @@ a:visited {
 }
 .Title {
     font-size: 50px;
+}
+
+.WindowButton {
+    image-rendering: pixelated;
+    border-radius: 2px;
+    padding-right: 2px;
+    transition: 0.25s;
+}
+.WindowButton:hover {
+    transform: scale(1.25);
 }
 
 .SmallScreenWarn {
@@ -150,10 +163,14 @@ a {
 button {
     font-family: WanderersLost;
     background-color: black;
-    border-radius: 2px;
-    border: 2px white solid;
+    box-shadow: 0px 0px 5px gray;
+    border: 4px gray ridge;
     color: white;
     cursor: url('../Assets/Cursor_Hover.png') 18 9, auto;
+    transition: 0.5s;
+}
+button:hover {
+    transform: scale(1.25);
 }
 audio {
     background-color: gray;
