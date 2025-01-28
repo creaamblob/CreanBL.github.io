@@ -24,8 +24,8 @@
             text-decoration: none !important;
         }
         .Download {
-            background-color: rgb(48, 42, 63);
-            width: 300px;
+            background-color: rgb(39, 32, 54);
+            width: 280px;
             text-align: left;
             vertical-align: middle;
             font-size: 20px;
@@ -46,6 +46,21 @@
             width: 100%;
             justify-content: center;
             flex-wrap: wrap;
+        }
+        .DownloadButton {
+            border: 2px white solid;
+            border-radius: 2px;
+            padding: 5px 5px 0px;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            width: 65%;
+            height: 30px;
+            transition: 0.25s;
+            image-rendering: pixelated;
+        }
+        .DownloadButton:hover {
+            transform: scale(1.2);
         }
     </style>
 
@@ -95,12 +110,12 @@
 
         <center>
             <br><br>
-            <div class="RetroWindow" style="max-width: 825px; height: 670px;">
+            <div class="RetroWindow" style="max-width: 1245px; height: 670px;">
                 <!-- Window Label + Buttons -->
-                <div style="border: 4px rgb(0, 0, 0) ridge; height: 25px; padding: 5px; width: 97%; font-size: 17px; display: flex; vertical-align: middle;">
+                <div style="border: 4px rgb(0, 0, 0) ridge; height: 25px; padding: 5px; width: 98%; font-size: 17px; display: flex; vertical-align: middle;">
 
                     <div style="width: 49.9999%; font-size: 12px; display: flex; margin-top: 4px; text-align: left;">
-                        Miscannellous > Downloads
+                        Miscellaneous > Downloads
                     </div>
                     
                     <div style="width: 49.9999%; font-size: 17px; display: flex; text-align: right; justify-content: right;">
@@ -116,12 +131,34 @@
                     </p><br>
                     <div class="DownloadsContainer">
 
-                        <a href="../Assets/Downloads/BloodshedPlus.tmod">
-                            <div class="Download" style="background-image: url('../Assets/Downloads/BloodshedPlus.png');">
-                                <font style="vertical-align: middle;">Bloodshed+</font><br>
-                                <thought>A Terraria 1.4.4 mod<br> that revamps blood<br> particles.</thought> 
-                            </div>
-                        </a>
+                         <!--Bloodshed+-->
+                        <div class="Download" style="background-image: url('../Assets/Downloads/BloodshedPlus.png'); background-position-y: 50%;">
+                            <font style="vertical-align: middle; color: white;">Bloodshed+</font><br>
+                            <thought>A Terraria 1.4.4 mod<br> that revamps blood<br> particles.</thought><br><br>
+
+                            <a href="../Assets/Downloads/BloodshedPlus.tmod">
+                                <div class="DownloadButton" style="background-image: linear-gradient(rgb(38, 146, 44), rgb(5, 70, 87));">
+                                    Download
+                                </div>
+                            </a>
+
+                            <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3398127341">
+                                <div class="DownloadButton" style="background-image: linear-gradient(rgb(30, 10, 139), rgb(50, 18, 87));">
+                                    Steam Workshop
+                                </div>
+                            </a>
+                        </div>
+
+                        <!--Wanderer Lost-->
+                        <div class="Download" style="background-image: url('../Assets/Downloads/WandererLost.png'); background-position-y: 50%;">
+                            <font style="vertical-align: middle; color: white;">Wanderer's Lost Font</font><br>
+                            <thought style="font-size: 12px;">The font used on this website.<br>Can be used freely<br> as long as you<br> don't claim it<br> as yours.</thought><br><br>
+
+                            <a href="../Assets/WandererLost Font.ttf">
+                                <div class="DownloadButton" style="background-image: linear-gradient(rgb(38, 146, 44), rgb(5, 70, 87));">
+                                    Download
+                                </div>
+                            </a>
 
                     </div>
                 </div>

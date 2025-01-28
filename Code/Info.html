@@ -26,6 +26,12 @@
             font-size: 20px;
             color: gray;
         }
+        .PetImage {
+            transition: 0.25s;
+        }
+        .PetImage:hover {
+            transform: scale(1.2);
+        }
         .TLDRpc {
             background-image: linear-gradient(to bottom, rgb(3, 76, 145), rgb(18, 18, 119),rgb(18, 18, 119),rgb(18, 18, 119) );
             box-shadow: 0px 0px 10px deepskyblue;
@@ -112,7 +118,7 @@
 
             <div class="TLDRpc">
                 <!-- Window Label + Buttons -->
-                <div style="border: 4px rgb(0, 0, 0) ridge; height: 25px; padding: 5px; width: 97%; font-size: 17px; display: flex; vertical-align: middle;">
+                <div style="border: 4px rgb(0, 0, 0) ridge; height: 25px; padding: 5px; width: 95.75%; font-size: 17px; display: flex; vertical-align: middle;">
 
                     <div style="width: 49.9999%; font-size: 17px; display: flex; text-align: left;">
                         TLDR
@@ -132,26 +138,20 @@
                         🔵 Favourite Colour: Blue<br>
                         ☠️ <a href="https://en.wikipedia.org/wiki/Attention_deficit_hyperactivity_disorder" target="_blank">ADHD</a> and <a href="https://en.wikipedia.org/wiki/Autism" target="_blank">Autism spectrum disorder</a><br>
                         🇫🇮 Finnish<br>
-                        ♂️ He / Him
                     </p>
                     <h3>✅ Likes:</h3>
                     <p>
                         Games<br><br>
                         Pixel-Art<br><br>
                         Pretty tilesets in games<br><br>
-                        Programming<br><br>
-                        Birds
+                        Programming
                     </p>
                     <h3>❌ Dislikes:</h3>
                     <p>
                         Social situations<br><br>
-                        Social events with food<br><br>
                         Programming<br><br>
-                        Social norms <thought>(Except closing the door upon leaving, fuck you dad)</thought><br><br>
                         Excess hypocrisy<br><br>
-                        Insects<br><br>
                         AI images<br><br>
-                        Being the center of attention<br><br>
                     </p>
                 </div>
             </div>
@@ -172,37 +172,19 @@
 
                 <div class="WindowContainer">
                     <img src="../Assets/CreanBL.png" width="200px" style="float: left;"><br>
-                    <p>I'm CreanBL <thought>(Pronounced "Kriinbel")</thought>, a Finnish guy with a passion for videogames.</p>
-                    <p>I have been a Minecraft and Terraria fan since kindergarten.
-                    <thought>(I'm that young?!)</thought></p>
+                    <p>
+                        I'm CreanBL <thought>(Pronounced "Kriinbel")</thought>, a Finnish person with an interest in coding and gaming.
+                    </p>
+
+                    <p>
+                        I currently code with C# and HTML, but I will seek education on game-development once I finish school. <thought>(2025, hopefully)</thought><br><br>
+                        What inspired to start programming was watching some old Terraria modding tutorials as a child and going "Wow, I want to make that!"<br><br>
+                        Nowadays my skills have surpassed what I imagined back then by a lot.<br><br>
+                        I still have my first mod saved on my hard disk, and no, I will not share it because of embarrassment and legal concerns.
+                    </p>
+
+                    <p>I'll fill out more info later.</p>
                     
-                    <p>I got interested in Terraria Modding in the late 2010s, I don't really remember.<br>
-                    And it went horribly, I still dread the things I did to this day.<br>
-                    The mod truly was a programming and game design crime. Luckily, I didn't release it.</p>
-                    <h4>WHAT THE FUCK IS THIS SHIT<font style="color: white; font-family: WanderersLostColour; font-size: 25px;"> 😭😭</font></h4>
-                    <img src="../Assets/Modding101.png" width="50%">
-    
-                    <p>A few years later, I tried making a small mod that re-adds <a href="https://terraria.wiki.gg/wiki/Legacy:Tizona" target="_blank">Tizona</a> from the old console versions.<br>
-                    I didn't know what the hell I was doing, but something kept me going.</p>
-    
-                    <p>
-                        And then I developed a passion for programming and pixel-art.<br>
-                        The mod is still being developed to this day, and should be releasing in ~2026(?) <thought>(2029 if we're realistic)</thought>.<br>
-                        You can find more information on the mod in the Creations<img src="../Assets/Creations.png" style="vertical-align: middle;"> tab.
-                    </p>
-    
-                    <p>
-                        I taught myself to program in HTML a few years ago, and recently created a website in Computer Science.<br>
-                        After that, I started making this website.
-                    </p>
-                    <h4>My previous website</h4>
-                    <img src="../Assets/MyPrevSite.png" width="100%">
-    
-                    <p>
-                        I tend to swear a lot, if you haven't already noticed by being on the site for over 10 seconds.<br>
-                        I don't really understand why it's "inappropriate", they're just words that sound funny. They aren't even slurs or anything.
-                    </p>
-    
                     <p>
                         My favourite games are:<br>
                         > <a href="https://store.steampowered.com/app/105600/Terraria/" target="_blank"> Terraria</a><br>
@@ -212,8 +194,8 @@
                         <font style="font-size: 25px;">In categories:</font><br>
                         <font style="color: gold;">Favourite Gameplay:</font> Celeste, ULTRAKILL<br>
                         <font style="color: gold;">Favourite Worldbuilding:</font> Touhou Project<br>
-                        <font style="color: gold;">Favourite Soundtrack:</font> Touhou Project, ULTRAKILL, Celeste<br>
-                        <button onclick="ChangeDetailsVisibility('Music')">Details</button>
+                        <font style="color: gold;">Favourite Soundtrack:</font> Touhou Project, ULTRAKILL, Celeste<br><br>
+                        <button onclick="ChangeDetailsVisibility('Music')">Details (Large List)</button>
                         <thought id="MusicDetails">
                             <br>
                             <font style="font-size: 25px;">More of a list which songs I like</font><br><br>
@@ -236,10 +218,27 @@
                             <font style="font-size: 20px;">Touhou Project:</font><br>
                             Couldn't decide, so I put them in categories instead.<br>
                             The songs are kinda in order from best (top) to really good (bottom).<br>
-                            I like the OST of Wily Beast and Weakest Creature, Unfinished Dream of All Living Ghost and Imperishable Night the most<br><br>
+                            I like the OST of Wily Beast and Weakest Creature, Unfinished Dream of All Living Ghost and Imperishable Night the most.<br><br>
+
+                            <font style="font-size: 15px;">Glossary:<br></font>
+                            <font style="font-size: 10px;">
+                                EoSD: Embodiment of Scarlet Devil (Touhou 6, 2002)<br>
+                                PCB: Perfect Cherry Blossom (Touhou 7, 2003)<br>
+                                IN: Imperishable Night (Touhou 8, 2004)<br>
+                                MoF: Mountain of Faith (Touhou 10, 2007)<br>
+                                SA: Subterranean Animism (Touhou 11, 2008)<br>
+                                UFO: Undefined Fantastic Object (Touhou 12, 2009)<br>
+                                TD: Ten Desires (Touhou 13, 2011)<br>
+                                DDC: Double Dealing Character (Touhou 14, 2013)<br>
+                                LoLK: Legacy of Lunatic Kingdom (Touhou 15, 2015)<br>
+                                AoCF: Antinomy of Common Flowers (Touhou 15.5, 2017)<br>
+                                HSiFS: Hidden Star in Four Seasons (Touhou 16, 2017)<br>
+                                WBaWC: Wily Beast and Weakest Creature (Touhou 17, 2019)<br>
+                                UM: Unconnected Marketeers (Touhou 18, 2021)<br>
+                                UDoALG: Unfinished Dream of All Living Ghost (Touhou 19, 2023)<br><br><br>
+                            </font>
     
                             Title Menu:<br>
-                            Sealed Gods [MoF] (Probably because of nostalgia)<br>
                             The Space Shrine Maiden Appears [LoLK]<br>
                             Awakening of the Earth Spirits [SA]<br><br>
     
@@ -297,12 +296,9 @@
     
                             Final Boss:<br>
                             Entrusting this World to Idols ~ Idolatrize World [WBaWC]<br>
-                            The Deviants' Unobstructed Kingdom of Light ~ Kindgom of Nothingness [UDoALG]<br>
                             Where Is That Bustling Marketplace Now ~ Immemorial Marketeers [UM]<br>
-                            Inchlings of the Shining Needle ~ Little Princess [DDC]<br>
-                            Bloom Nobly, Ink-Black Cherry Blossom ~ Border of Life  [PCB]<br>
-                            The Lost Emotion [HM]<br>
-                            Strawberry Crisis!! [PoDD]<br><br>
+                            The Deviants' Unobstructed Kingdom of Light ~ Kindgom of Nothingness [UDoALG]<br>
+                            Tonight Stars an Easygoing Egoist (Live ver.) ~ Egoistical Flowers [AoCF]<br><br>
     
                             Extra Stage:<br>
                             The Great Fantastic Underground Railway Network [UM]<br>
@@ -311,9 +307,9 @@
     
                             Extra Boss:<br>
                             The Princess Who Slays Dragon Kings [UM]<br>
-                            Primordial Beat ~ Pristine Beat [DDC]</a><br><br>
+                            Primordial Beat ~ Pristine Beat [DDC]</a>
     
-                        </thought><br>
+                        </thought><br><br>
                         <font style="color: gold;">Favourite Atmosphere:</font> Deltarune Chapter 2<br>
                         <font style="color: gold;">Favourite Artstyle:</font> Hollow Knight<br>
                         <font style="color: gold;">Most Replayable:</font> Terraria, Touhou 19
@@ -321,22 +317,24 @@
                         
                     </p>
     
-                    <p>I have an overwhelming amount of pets, 26 if we count dead and alive.<br>
+                    <p>I have a few pets, 26 to be exact. <thought>(if we count past and present)</thought><br>
                         > Twenty Budgies<br>
                         > One Cockatiel<br>
                         > Two Dogs <thought>(One dead)</thought><br>
                         > Two Hamsters <thought>(Both dead)</thought><br>
-                        > One Mouse <thought>(Dead)</thought>
+                        > One Mouse <thought>(Dead)</thought><br><br>
+
+                        <button onclick="ChangeDetailsVisibility('WasteOfSpaceJK')">Pets</button><br><br>
                     </p>
     
-                    <div style="display: flex; flex-wrap: wrap; justify-content: center; border-radius: 2px;">
-                        <img src="../Assets/Blog/Budgies.png" width="40%">
-                        <img src="../Assets/Santos.png" width="20%">
-                        <img src="../Assets/Tepsu.png" width="20%">
-                        <img src="../Assets/Kana.png" width="20%">
-                        <img src="../Assets/Ed.png" width="20%">
-                        <img src="../Assets/Thriller.png" width="15%">
-                        <img src="../Assets/Jitsku.png" width="15%">
+                    <div style="display: flex; flex-wrap: wrap; justify-content: center; border-radius: 2px;" id="Pets">
+                        <img src="../Assets/Blog/Budgies.png" width="40%" class="PetImage">
+                        <img src="../Assets/Santos.png" width="20%" class="PetImage">
+                        <img src="../Assets/Tepsu.png" width="20%" class="PetImage">
+                        <img src="../Assets/Kana.png" width="20%" class="PetImage">
+                        <img src="../Assets/Ed.png" width="20%" class="PetImage">
+                        <img src="../Assets/Thriller.png" width="15%" class="PetImage">
+                        <img src="../Assets/Jitsku.png" width="15%" class="PetImage">
                     </div>
     
                     <p>I think that's all that you need to know about me.</p>
@@ -348,27 +346,21 @@
                             🦜 Lots of birds (and dog)<br>
                             🔵 Favourite Colour: Blue<br>
                             ☠️ <a href="https://en.wikipedia.org/wiki/Attention_deficit_hyperactivity_disorder" target="_blank">ADHD</a> and <a href="https://en.wikipedia.org/wiki/Autism" target="_blank">Autism spectrum disorder</a><br>
-                            🇫🇮 Finnish<br>
-                            ♂️ He / Him
+                            🇫🇮 Finnish
                         </p>
                         <h3>✅ Likes:</h3>
                         <p>
                             Games<br><br>
                             Pixel-Art<br><br>
                             Pretty tilesets in games<br><br>
-                            Programming<br><br>
-                            Birds
+                            Programming
                         </p>
                         <h3>❌ Dislikes:</h3>
                         <p>
                             Social situations<br><br>
-                            Social events with food<br><br>
                             Programming<br><br>
-                            Social norms <thought>(Except closing the door upon leaving, fuck you dad)</thought><br><br>
                             Excess hypocrisy<br><br>
-                            Insects<br><br>
                             AI images<br><br>
-                            Being the center of attention<br><br>
                         </p>
                     </div>
                 </div>
@@ -377,7 +369,17 @@
         </center>
         <script>
             document.getElementById("MusicDetails").style.display = "none"
+            document.getElementById("Pets").style.display = "none"
+
             function ChangeDetailsVisibility(type) {
+                if (type == "WasteOfSpaceJK") {
+                    if (document.getElementById("Pets").style.display == "none") {
+                        document.getElementById("Pets").style.display = "flex";
+                    }
+                    else {
+                        document.getElementById("Pets").style.display = "none";
+                    }
+                }
                 if (type == "Music") {
                     if (document.getElementById("MusicDetails").style.display == "none") {
                         document.getElementById("MusicDetails").style.display = "";
