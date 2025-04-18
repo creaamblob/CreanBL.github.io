@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html><div class="SmallScreenWarn">
+        <div class="SmallScreenContain">
+            Your screen is too small!
+            Please enable desktop mode in your browser!
+            (Usually found in a triple-dot dropdown)
+        </div>
+    </div>
+    <div class="SmallScreenWarn">
+        <div class="SmallScreenContain">
+            Your screen is too small!<br>
+            Please stretch the window or enable desktop mode in your browser!<br>
+            (Usually found in a triple-dot dropdown)
+        </div>
+    </div>
+    <head>
+        <title>Crean's Website</title>
+        <link rel="icon" href="../Assets/Home.png"/>
+        <link rel="stylesheet" href="style.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
+    <img src="../Assets/CRT.gif" class="CRT">
+    <style>
+        @font-face { font-family: WanderersLost; src: url('../Assets/WandererLost\ Font.ttf'); }
+        p {
+            font-family: WanderersLost;
+            font-size: 22px;
+            padding: 5px;
+            background-color: rgba(158, 103, 1, 0.204);
+            border-radius: 2px;
+        }
+        input {
+            font-family: WanderersLost;
+            background-color: black;
+            box-shadow: 0px 0px 5px gray;
+            border: 4px gray ridge;
+            color: white;
+            transition: 0.25s;
+        }
+        input:hover {
+            transform: scale(1.2);
+            background-color: rgb(56, 52, 66);
+        }
+        textarea {
+            font-family: WanderersLost;
+            background-color: black;
+            box-shadow: 0px 0px 5px gray;
+            border: 4px gray ridge;
+            color: white;
+            transition: 0.25s;
+            margin-top: 10px;
+        }
+        textarea:hover {
+            transform: scale(1.2);
+            background-color: rgb(56, 52, 66);
+        }
+        .ArticlesBox {
+            width: 75%;
+            height: 845px;
+            border: 0px transparent solid;
+        } 
+        .Me {
+            width: 100%;
+            height: auto;
+            vertical-align: middle;
+            image-rendering: pixelated;
+            margin: auto;
+            transition: 0.25s;
+        }
+        .Me:hover {
+            transform: scale(1.125);
+        }
+        h1:hover {
+            transform: scale(1.25);
+        }
+        h2:hover {
+            transform: scale(1.25);
+        }
+        h3:hover {
+            transform: scale(1.25);
+        }
+        .ExtraInfoPC {
+            background-image: linear-gradient(to bottom, rgb(3, 76, 145), rgb(18, 18, 119),rgb(18, 18, 119),rgb(18, 18, 119) );
+            box-shadow: 0px 0px 10px deepskyblue;
+            border: 4px deepskyblue ridge;
+            
+            padding: 15px 5px 15px;
+            border-radius: 12.5px;
+            
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            font-family: WanderersLost, Courier, monospace;
+            
+            max-width: 400px;
+            display: inline-block;
+            align-self: center;
+            vertical-align: top;
+        }
+        .ExtraInfoMobile {
+            display: none;
+            align-self: center;
+            vertical-align: top;
+            
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            font-family: WanderersLost, Courier, monospace;
+        }
+        .StartParaBox {
+            width: 100%;
+            height: 600px;
+            background-color: rgba(158, 103, 1, 0.204);
+            display: flex;
+            vertical-align: middle;
+            justify-content: center;
+        }
+        @media screen and (max-width: 1600px) {
+            .ExtraInfoPC {
+                display: none;
+            }
+            .ExtraInfoMobile {
+                display:block;
+            }
+        }
+    </style>
+    <body>
+        <linktab>
+            <div style="display: grid; justify-content: center;">
+                <h4 style="font-size: 15px;">Crean UI 1.0</h4>
+
+                <div class="WindowContainer" style="max-width: 150px; min-height: 83.5%; max-height: 83.5%;">
+                    <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Main.html">
+                        <img src="../Assets/Home.png" class="LinkButtonSmol">
+                    </a>
+    
+                    <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Creations.html">
+                        <img src="../Assets/Creations.png" class="LinkButtonSmol">
+                    </a>
+    
+                    <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Blogs.html">
+                        <img src="../Assets/Blog.png" class="LinkButtonSmol">
+                    </a>
+                    <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Info.html">
+                        <img src="../Assets/Info.png" class="LinkButtonSmol">
+                    </a>
+                    <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Misc.html">
+                        <img src="../Assets/Misc.png" class="LinkButtonSmol">
+                    </a>
+    
+                    <br>
+                    -
+                    <br>
+    
+                    <a href="https://www.youtube.com/@CreanBL">
+                        <img src="../Assets/YoutubeLogo.png" class="LinkButtonSmol">
+                    </a>
+    
+                    <a href="https://www.steamcommunity.com/id/CreanBL">
+                        <img src="../Assets/SteamLogo.png" class="LinkButtonSmol">
+                    </a>
+    
+                    <a href="https://www.github.com/CreaamBlob">
+                        <img src="../Assets/GithubLogo.png" class="LinkButtonSmol">
+                    </a>
+                </div>
+                
+            </div>
+        </linktab>
+
+        <center>
+        <br><br>
+        <div class="RetroWindow">
+
+            <!-- Window Label + Buttons -->
+            <div style="border: 4px rgb(0, 0, 0) ridge; height: 25px; padding: 5px; width: 98%; font-size: 17px; display: flex; vertical-align: middle;">
+
+                <div style="width: 49.9999%; font-size: 17px; display: flex; text-align: left;">
+                    Main Page
+                </div>
+
+                <div style="width: 49.9999%; font-size: 17px; display: flex; text-align: right; justify-content: right;">
+                    <img class="WindowButton" src="../Assets/MinimizeButton.png">
+                    <img class="WindowButton" src="../Assets/MaximiseButton.png">
+                    <img class="WindowButton" src="../Assets/CloseButton.png">
+                </div>
+            </div>
+
+
+
+            <div class="WindowContainer">
+                <div class="Title" style="background-image: url('../Assets/BG_ALT_Pixel.png'); background-size: cover; height: 300px; display: flex; justify-content: center; align-items: center;">
+                    <h2>CreanBL's Website</h2>
+                </div>
+    
+                <div class="ExtraInfoMobile" style="justify-content: center;">
+                    <img src="../Assets/WelcomeBlinkie.gif" style="image-rendering: pixelated;">
+                    <img src="../Assets/tModletBlinkie.gif" style="image-rendering: pixelated;">
+                </div><br>
+
+                <div class="StartParaBox">
+                    <div style="display: flex; vertical-align: middle; width: 85%; height: 100%;">
+                        <p style="background-color: transparent; margin: auto; vertical-align: middle; font-size: 18px;">
+                            Welcome to my website!<br><br>
+                            You'll find my creations, guides, art and information about me here.<br><br>
+                            Please take a look around!<br><br>
+                            Use the buttons down below or the sidebar on the left to navigate the website.<br><br>
+                            This site is best viewed on a big screen like a TV or a monitor for example.<br><br>
+                            If you're on mobile, please enable desktop view in your browser. <thought>(Usually found in a triple-dot dropdown.)</thought>
+                        </p>
+                    </div>
+                    <div style="display: flex; vertical-align: middle; width: 75%; height: 100%;">
+                        <img src="../Assets/Creations/Art/Budige.png" style="vertical-align: middle;" class="Me">
+                    </div>
+                </div>
+                <br>
+    
+                <div style="display: inline-block; width: 100%; height: 225px; justify-content: center; vertical-align: middle; padding-bottom: 200px;">
+                    <h1>Navigation</h1><br>
+                    <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Creations.html" class="Links" style="margin-top: 50%;">
+                        <img src="../Assets/Creations.png" class="LinkButton">
+                    </a>
+        
+                    <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Blogs.html" class="Links" style="margin-top: 50%;">
+                        <img src="../Assets/Blog.png" class="LinkButton">
+                    </a>
+        
+                    <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Info.html" class="Links" style="margin-top: 50%;">
+                        <img src="../Assets/Info.png" class="LinkButton">
+                    </a>
+    
+                    <a href="https://creaamblob.github.io/CreanBL.github.io/Code/Misc.html" class="Links" style="margin-top: 50%;">
+                        <img src="../Assets/Misc.png" class="LinkButton">
+                    </a>
+                </div>
+    
+                <div style="display: flexbox; justify-content: center; align-items: center; width: 100%; background-image: url('../Assets/BG03.png'); border-radius: 2px;">
+                    <h1 style="padding-top: 20px; margin: 0px;">Articles</h1><br>
+                    <iframe src="ArticlesBoxList.html" class="ArticlesBox"></iframe>
+                </div>
+                
+                <div style="display: inline-block; width: 100%; height: 225px; justify-content: center; vertical-align: top; padding-bottom: 100px;">
+                    <h1>Other Links</h1><br>
+                        <a href="https://www.youtube.com/@CreanBL" class="Links" target="_blank">
+                            <img src="../Assets/YoutubeLogo.png" class="LinkButton">
+                        </a>
+                        <a href="https://www.steamcommunity.com/id/CreanBL" class="Links" target="_blank">
+                            <img src="../Assets/SteamLogo.png" class="LinkButton">
+                        </a>
+                        <a href="https://www.github.com/CreaamBlob" class="Links" target="_blank">
+                            <img src="../Assets/GithubLogo.png" class="LinkButton">
+                        </a>
+                </div>
+    
+                <div class="ExtraInfoMobile" style="background-color: rgba(158, 103, 1, 0.204); margin-top: 100px;">
+                    <h2>My Time:</h2>
+                    <p style="background-color: transparent;" id="time2">00:00:00</p>
+    
+                    <h2 style="margin-bottom: 5px">
+                        Send a Message:
+                    </h2>
+                    <form action="https://api.web3forms.com/submit" method="post">
+                        <thought>Feel free to send your own website!</thought><br><br>
+        
+                        <input type="hidden" name="access_key" value="ce174ffb-49aa-4f45-968e-42213c024655">
+                        <input type="hidden" name="subject" value="Guestbook Signed">
+                        <input type="text" name="name" style="min-width: 255px; max-width: 255px;" placeholder="Your name (optional)">
+        
+                        <br>
+                        <textarea name="message" placeholder="Type a message for me" style="min-width: 255px; max-width: 255px; min-height: 40px; max-height: 120px; font-size: 12px; overflow: auto;" required></textarea>
+                        <br>
+        
+                        <input type="text" placeholder="Type 'Confirm' to proceed" id="botCheck2" style="min-width: 255px; max-width: 255px; font-size: 12px;" required><br>
+                        <input type="hidden" name="redirect" value="https://creaamblob.github.io/CreanBL.github.io/Code/SendSuccess.html">
+                        <button type="submit" id="submitEmail2">Send</button>
+                    </form>
+    
+                    <h2 style="margin-bottom: 5px; font-size: 30px;">Contact me:</h2>
+                    <thought>creanblwebsite@gmail.com</thought>
+    
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <script>
+            setInterval(UpdateTime, 100);
+            setInterval(UpdateEmailForm, 1);
+            var number2 = String(Math.floor(Math.random() * (1555 - 25)));
+
+            function UpdateEmailForm() {
+                var submitButton = document.getElementById("submitEmail");
+                var submitButton2 = document.getElementById("submitEmail2");
+
+                document.getElementById("botCheck").placeholder = "Type '" + String(number2) + "' to confirm";
+                document.getElementById("botCheck2").placeholder = "Type '" + String(number2) + "' to confirm";
+
+                if (document.getElementById("botCheck").value == String(number2)) {
+                    submitButton.style.display = '';
+                }
+                else {
+                    submitButton.style.display = 'none';
+                }
+
+                if (document.getElementById("botCheck2").value == String(number2)) {
+                    submitButton2.style.display = '';
+                }
+                else {
+                    submitButton2.style.display = 'none';
+                }
+            }
+
+            function UpdateTime() {
+                const date = new Date();
+                const offSet = date.getTimezoneOffset() * 60 * 1000;
+                const UTCtime = date.getTime() + offSet;
+                const UTCoffset = 3 * 60 * 60 * 1000;
+                const FinlandTime = UTCtime + UTCoffset;
+                const FinlandTime2 = new Date(FinlandTime);
+
+                document.getElementById("time").innerHTML = String(FinlandTime2);
+                document.getElementById("time2").innerHTML = String(FinlandTime2);
+            }
+        </script>
+
+        <div class="ExtraInfoPC">
+
+            <!-- Window Label + Buttons -->
+            <div style="border: 4px rgb(0, 0, 0) ridge; height: 25px; padding: 5px; width: 96%; font-size: 17px; display: flex; vertical-align: middle;">
+
+                <div style="width: 49.9999%; font-size: 17px; display: flex; text-align: left;">
+                    Extras
+                </div>
+
+                <div style="width: 49.9999%; font-size: 17px; display: flex; text-align: right; justify-content: right;">
+                    <img class="WindowButton" src="../Assets/MinimizeButton.png">
+                    <img class="WindowButton" src="../Assets/MaximiseButton.png">
+                    <img class="WindowButton" src="../Assets/CloseButton.png">
+                </div>
+
+            </div>
+
+            <div class="WindowContainer">
+                <img src="../Assets/WelcomeBlinkie.gif" style="image-rendering: pixelated;">
+                <img src="../Assets/tModletBlinkie.gif" style="image-rendering: pixelated;">
+    
+                <h2 style="margin-bottom: 5px; font-size: 30px;">Contact me:</h2>
+                <thought>creanblwebsite@gmail.com</thought>
+                <br><br>
+                <h3 style="margin-bottom: 5px">
+                    Send a Message:
+                </h3>
+                <form action="https://api.web3forms.com/submit" method="post">
+                    <thought>Feel free to send your own website!</thought><br><br>
+    
+                    <input type="hidden" name="access_key" value="ce174ffb-49aa-4f45-968e-42213c024655">
+                    <input type="hidden" name="subject" value="Guestbook Signed">
+                    <input type="text" name="name" style="min-width: 265px; max-width: 265px;" placeholder="Your name (optional)">
+    
+                    <br>
+                    <textarea name="message" placeholder="Type a message for me" style="min-width: 265px; max-width: 265px; min-height: 40px; max-height: 120px; font-size: 12px; overflow: auto;" required></textarea>
+                    <br>
+    
+                    <input type="text" placeholder="Type 'Confirm' to proceed" id="botCheck" style="min-width: 265px; max-width: 265px; font-size: 12px;" required><br>
+                    <input type="hidden" name="redirect" value="https://creaamblob.github.io/CreanBL.github.io/Code/SendSuccess.html">
+                    <button type="submit" id="submitEmail">Send</button>
+                </form>
+                <h2>My Time:</h2>
+                <p id="time">00:00:00</p><br>
+                <thought>
+            </div>
+        </div>
+    </center>
+    </body>
+</html>
