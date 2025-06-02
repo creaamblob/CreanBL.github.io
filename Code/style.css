@@ -244,7 +244,7 @@ img {
     transition: 0.25s;
 }
 .BlogCard:hover {
-    transform: scale(1.4);
+    transform: scale(1.2);
 }
 .ChangePageButton {
     display: flexbox;
