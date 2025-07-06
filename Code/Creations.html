@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html><div class="SmallScreenWarn">
+        <div class="SmallScreenContain">
+            Your screen is too small!
+            Please enable desktop mode in your browser!
+            (Usually found in a triple-dot dropdown)
+        </div>
+    </div>
+    <head>
+        <title>Creations | Crean's Website</title>
+        <link rel="icon" href="../Assets/Creations.png"/>
+        <link rel="stylesheet" href="style.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head><img src="../../Assets/CRT.gif" class="CRT">
+    <style>
+        @font-face { font-family: WanderersLost; src: url('../Assets/WandererLost\ Font.ttf'); }
+        a:link { color: white; }
+        a:active { color: white; }
+        a:visited { color: white; }
+        
+    </style>
+    <body>
+
+        <div class="Window" style="position: fixed; top: 0vh; width: 100vw; height: 100px; display: flex; justify-content: center;">
+
+            <a href="Main.html" class="Links">
+                <img src="../Assets/Home.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Creations.html" class="Links">
+                <img src="../Assets/Creations.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Blogs.html" class="Links">
+                <img src="../Assets/Blog.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Info.html" class="Links">
+                <img src="../Assets/Info.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Misc.html" class="Links">
+                <img src="../Assets/Misc.png" class="LinkButtonSmol">
+            </a>
+
+        </div>
+
+        <br><br>
+        
+        <div class="Window" style="width: 80vw; padding: 10px;">
+            <p>Collection of things I have created.</p>
+            
+            <h2>Projects</h2>
+            <div id="Page1" class="Page">
+                <div style="display: table; width: 100%; image-rendering: pixelated;"><br>
+                    <a href="https://creaamblob.github.io/CreanBL.github.io/Code/CreationsFolder/TranscendentMod.html">
+                        <img src="../Assets/Creations/TranscendentModThumbnail.png" style="width: 95%; vertical-align: middle; justify-content: left;">
+                    </a>
+                    <span style="font-size: 25px;">Transcendent Mod</span><br>
+                    <span style="font-size: 15px;">A Terraria 1.4.4 content mod for tModloader.</span>
+                </div>
+            </div>
+                
+            <div style="background-color: gold; width: 10px; height: 10px; border-radius: 2px; box-shadow: 0px 0px 3px orange; border: 2px orange ridge;" id="PreviewChangeBar"></div><br>
+            <div class="ButtonTab" style="display: inline-block; width: 100%; height: 80px;">
+                <button onclick="ChangePreview(1)" class="ChangePageButton" id="ChangePageButton1">1</button>
+            </div>
+
+            <br><br><br>
+
+            <p>Please select a category.</p>
+            <div style="padding-bottom: 400px;">
+                <div style="display: flex; flex: 49,999%; justify-content: center;">
+
+                    <a href="CreationsFolder/Programming.html" class="Links">
+                        Programmed<br>
+                        <img src="../Assets/Code.png" class="LinkButton">
+                    </a>
+                    |
+                    <a href="CreationsFolder/Art.html" class="Links">
+                        Drawn<br>
+                        <img src="../Assets/Gallery.png" class="LinkButton">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var curPreview = 1;
+        var changePageTimer = 0;
+        
+        setInterval(ChangePreviewAutomatically, 8);
+        function ChangePreviewAutomatically() {
+            console.log(String(changePageTimer));
+            changePageTimer += 1;
+            if (changePageTimer > 159) {
+                switch (curPreview) {
+                    case 1: ChangePreview(1); break;
+                }
+                
+                changePageTimer = 0;
+            }
+            document.getElementById("PreviewChangeBar").style.width = (String)(80 - changePageTimer / 2) + "vw";
+        }
+        
+        function ChangePreview(goPreview) {
+            if (curPreview < 1) {
+                curPreview = 1;
+            }
+            
+            var loop, buttonID, button, contents;
+            buttonID = document.getElementById(String("ChangePageButton" + goPreview));
+            contents = document.getElementById(String("Page" + curPreview));
+            upcomingContents = document.getElementById(String("Page" + goPreview));
+
+            button = document.getElementsByClassName("ChangePageButton");
+            for (loop = 0; loop < button.length; loop++)
+            {
+                button[loop].className = button[loop].className.replace(" active", "");
+            }
+
+            buttonID.className += " active";
+            contents.style.display = "none";
+            upcomingContents.style.display = "block";
+            curPreview = goPreview;
+            changePageTimer = 0;
+        }
+        ChangePreview(1);
+        </script>
+    </body>
+</html>

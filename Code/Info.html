@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html><div class="SmallScreenWarn">
+        <div class="SmallScreenContain">
+            Your screen is too small!
+            Please enable desktop mode in your browser!
+            (Usually found in a triple-dot dropdown)
+        </div>
+    </div>
+    <head>
+        <title>About Me | Crean's Website</title>
+        <link rel="icon" href="../Assets/Info.png"/>
+        <link rel="stylesheet" href="style.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head><img src="../Assets/CRT.gif" class="CRT">
+    <style>
+        @font-face { font-family: WanderersLost; src: url('../Assets/WandererLost\ Font.ttf'); }
+
+        p {
+            font-family: WanderersLost;
+            font-size: 15px;
+        }
+        img {
+            border-radius: 2px;
+        }
+        h4 {
+            font-size: 20px;
+            color: gray;
+        }
+        @media screen and (max-width: 1600px) {
+            .TLDRpc {
+                display: none;
+            }
+            .TLDRmobile {
+                display: inline-block;
+            }
+        }
+    </style>
+    <body>
+        <div class="Window" style="position: fixed; top: 0vh; width: 100vw; height: 100px; display: flex; justify-content: center;">
+
+            <a href="Main.html" class="Links">
+                <img src="../Assets/Home.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Creations.html" class="Links">
+                <img src="../Assets/Creations.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Blogs.html" class="Links">
+                <img src="../Assets/Blog.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Info.html" class="Links">
+                <img src="../Assets/Info.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Misc.html" class="Links">
+                <img src="../Assets/Misc.png" class="LinkButtonSmol">
+            </a>
+
+        </div>
+
+        <br><br>
+
+        <div class="Window" style="width: 85vw;">
+            <p>
+                <img src="../Assets/CreanBL.png" width="200px" style="float: left; padding: 50px 20px 375px;"><br>
+                Hello!
+                <br>
+                I'm CreanBL, a Finnish person with an interest in programming and games.<br>
+                I am not really comfortable with sharing anything to people, so sorry if this is brief.<br>
+                I'm currently working on a Terraria mod called <font style="color: gold;">Transcendence Mod</font>.<br>
+
+
+                <br><br>
+
+                 <font style="font-size: 20px; color: white;">
+                    Interests:
+                </font><br>
+                Terraria Modding<br>
+                Deltarune<br>
+                ULTRAKILL<br>
+                Touhou Project<br><br>
+
+                <font style="font-size: 20px; color: white;">
+                    Likes:
+                </font><br>
+                Bicycling<br>
+                Cold Summer Nights<br><br>
+                
+                <font style="font-size: 20px; color: white;">
+                    Dislikes:
+                </font><br>
+                Spiders<br>
+                AI Slop<br>
+            </p>
+        </div>
+
+        <script>
+            document.getElementById("Pets").style.display = "none";
+            document.getElementById("GameYapDetails").style.display = "none";
+
+            function ChangeDetailsVisibility(type) {
+                if (type == "PetsButton") {
+                    if (document.getElementById("Pets").style.display == "none") {
+                        document.getElementById("Pets").style.display = "flex";
+                    }
+                    else {
+                        document.getElementById("Pets").style.display = "none";
+                    }
+                }
+
+                if (type == "GameYap") {
+                    if (document.getElementById("GameYapDetails").style.display == "none") {
+                        document.getElementById("GameYapDetails").style.display = "";
+                    }
+                    else {
+                        document.getElementById("GameYapDetails").style.display = "none";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

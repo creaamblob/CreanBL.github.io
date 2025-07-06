@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <div class="SmallScreenWarn">
+        <div class="SmallScreenContain">
+            Your screen is too small!<br>
+            Please stretch the window or enable desktop mode in your browser!<br>
+            (Usually found in a triple-dot dropdown)
+        </div>
+    </div>
+    <head>
+        <title>Crean's Website</title>
+        <link rel="icon" href="../Assets/Home.png"/>
+        <link rel="stylesheet" href="style.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
+    <img src="../Assets/CRT.gif" class="CRT">
+    <style>
+        @font-face { font-family: WanderersLost; src: url('../Assets/WandererLost\ Font.ttf'); }
+        h1:hover {
+            transform: scale(1.25);
+        }
+        h2:hover {
+            transform: scale(1.25);
+        }
+        h3:hover {
+            transform: scale(1.25);
+        }
+    </style>
+    <body>
+
+        <div class="Window" style="position: fixed; top: 0vh; width: 100vw; height: 100px; display: flex; justify-content: center;">
+
+            <a href="Main.html" class="Links">
+                <img src="../Assets/Home.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Creations.html" class="Links">
+                <img src="../Assets/Creations.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Blogs.html" class="Links">
+                <img src="../Assets/Blog.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Info.html" class="Links">
+                <img src="../Assets/Info.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Misc.html" class="Links">
+                <img src="../Assets/Misc.png" class="LinkButtonSmol">
+            </a>
+
+        </div>
+
+        <br><br>
+        <div class="Window" style="width: 87,5vw; padding: 5vw;">
+            <img src="../Assets/Logo.png">
+            <p>
+                Welcome to my website!<br>
+                This website serves as my portfolio and personal site.<br>
+                I don't really have anything to show yet, so the site's pretty empty right now.
+            </p>
+
+                <div style="display: inline-block; height: 225px; justify-content: center; vertical-align: middle; padding-bottom: 200px;">
+                    <h1>Navigation</h1><br>
+                    <a href="Creations.html" class="Links" style="margin-top: 50%;">
+                        <img src="../Assets/Creations.png" class="LinkButton">
+                    </a>
+        
+                    <a href="Blogs.html" class="Links" style="margin-top: 50%;">
+                        <img src="../Assets/Blog.png" class="LinkButton">
+                    </a>
+        
+                    <a href="Info.html" class="Links" style="margin-top: 50%;">
+                        <img src="../Assets/Info.png" class="LinkButton">
+                    </a>
+    
+                    <a href="Misc.html" class="Links" style="margin-top: 50%;">
+                        <img src="../Assets/Misc.png" class="LinkButton">
+                    </a>
+                </div>
+            </p>
+        </div>
+
+        <div class="Window" style="position: absolute; top: 150vh; width: 100vw; display: flex; justify-content: center;">
+            <div class="WindowContainer">
+                <h2 style="margin-bottom: 5px; font-size: 30px;">Contact me:</h2>
+                <thought>creanblwebsite@gmail.com</thought>
+                <br>
+                <h2>My Time:</h2>
+                <p id="time">00:00:00</p><br>
+            </div>
+        </div>
+
+        <script>
+            setInterval(UpdateTime, 100);
+            function UpdateTime() {
+                const date = new Date();
+                const offSet = date.getTimezoneOffset() * 60 * 1000;
+                const UTCtime = date.getTime() + offSet;
+                const UTCoffset = 3 * 60 * 60 * 1000;
+                const FinlandTime = UTCtime + UTCoffset;
+                const FinlandTime2 = new Date(FinlandTime);
+
+                document.getElementById("time").innerHTML = String(FinlandTime2);
+                document.getElementById("time2").innerHTML = String(FinlandTime2);
+            }
+        </script>
+    </body>
+</html>

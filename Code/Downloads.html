@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html><div class="SmallScreenWarn">
+        <div class="SmallScreenContain">
+            Your screen is too small!
+            Please enable desktop mode in your browser!
+            (Usually found in a triple-dot dropdown)
+        </div>
+    </div>
+    <head>
+        <title>Downloads | Crean's Website</title>
+        <link rel="icon" href="../Assets/Download.png"/>
+        <link rel="stylesheet" href="style.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head><img src="../Assets/CRT.gif" class="CRT">
+
+    <style>
+        @font-face { font-family: WanderersLost; src: url('../Assets/WandererLost\ Font.ttf'); }
+        a {
+            text-decoration: none !important;
+        }
+        .Download {
+            background-color: rgb(39, 32, 54);
+            width: 280px;
+            text-align: left;
+            vertical-align: middle;
+            font-size: 20px;
+            color: white;
+            background-repeat: no-repeat;
+            background-position-x: right;
+            margin: 15px;
+            padding: 10px;
+            box-shadow: 0px 0px 10px gray;
+            border: 4px gray ridge;
+            transition: 0.25s;
+        }
+        .Download:hover {
+            transform: scale(1.2);
+        }
+        .DownloadsContainer {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .DownloadButton {
+            border: 2px white solid;
+            border-radius: 2px;
+            padding: 5px 5px 0px;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            width: 65%;
+            height: 30px;
+            transition: 0.25s;
+            image-rendering: pixelated;
+        }
+        .DownloadButton:hover {
+            transform: scale(1.2);
+        }
+    </style>
+
+    <body>
+
+                <div class="Window" style="position: fixed; top: 0vh; width: 100vw; height: 100px; display: flex; justify-content: center;">
+
+            <a href="Main.html" class="Links">
+                <img src="../Assets/Home.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Creations.html" class="Links">
+                <img src="../Assets/Creations.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Blogs.html" class="Links">
+                <img src="../Assets/Blog.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Info.html" class="Links">
+                <img src="../Assets/Info.png" class="LinkButtonSmol">
+            </a>
+
+            <a href="Misc.html" class="Links">
+                <img src="../Assets/Misc.png" class="LinkButtonSmol">
+            </a>
+
+        </div>
+
+        <br><br>
+        <div class="Window" style="width: 50vw; padding-bottom: 10px;">
+            <p>
+                Download totally not malicious files!
+            </p>
+            <br>
+            <div class="DownloadsContainer">
+                <!--Bloodshed+-->
+                <div class="Download" style="background-image: url('../Assets/Downloads/TranscendenceIcon.png'); background-position-y: 50%;">
+                    <font style="vertical-align: middle; color: white;">Transcendence Mod</font><br>
+                    <thought>A Terraria 1.4.4<br> content mod.</thought><br><br>
+                        
+                    <a href="https://github.com/creaamblob/TranscendenceMod">
+                        <div class="DownloadButton" style="background-image: linear-gradient(rgb(164, 28, 182), rgb(54, 4, 129));">
+                            Github
+                        </div>
+                    </a>
+
+                </div>
+
+                <!--Bloodshed+-->
+                <div class="Download" style="background-image: url('../Assets/Downloads/BloodshedPlus.png'); background-position-y: 50%;">
+                    <font style="vertical-align: middle; color: white;">Bloodshed+</font><br>
+                    <thought>A Terraria 1.4.4 mod<br> that revamps blood<br> particles.</thought><br><br>
+                        
+                    <a href="../Assets/Downloads/BloodshedPlus.tmod">
+                        <div class="DownloadButton" style="background-image: linear-gradient(rgb(38, 146, 44), rgb(5, 70, 87));">
+                            Download
+                        </div>
+                    </a>
+                        
+                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3398127341">
+                        <div class="DownloadButton" style="background-image: linear-gradient(rgb(30, 10, 139), rgb(50, 18, 87));">
+                            Workshop
+                        </div>
+                    </a>
+                </div>
+                    
+                <!--Wanderer Lost-->
+                <div class="Download" style="background-image: url('../Assets/Downloads/WandererLost.png'); background-position-y: 50%;">
+                    <font style="vertical-align: middle; color: white;">Wanderer's Lost Font</font><br>
+                    <thought style="font-size: 12px;">The font used on this website.<br>Can be used<br> freely, as long<br> as you don't claim it<br> as yours.</thought><br><br>
+                        
+                    <a href="../Assets/WandererLost Font.ttf">
+                        <div class="DownloadButton" style="background-image: linear-gradient(rgb(38, 146, 44), rgb(5, 70, 87));">
+                            Download
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
