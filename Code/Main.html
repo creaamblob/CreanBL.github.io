@@ -25,6 +25,15 @@
         h3:hover {
             transform: scale(1.25);
         }
+        .emailField {
+            min-width: 265px;
+            max-width: 265px;
+            height: 20px;
+            min-height: 20px;
+            max-height: 20px;
+            font-size: 12px;
+            overflow: auto;
+        }
     </style>
     <body>
 
@@ -83,19 +92,40 @@
             </p>
         </div>
 
-        <div class="Window" style="position: absolute; top: 165vh; width: 100vw; display: flex; justify-content: center;">
+        <div class="Window" style="position: absolute; top: 190vh; width: 100vw; display: flex; justify-content: center; padding-bottom: 200px;">
             <div class="WindowContainer">
                 <h2 style="margin-bottom: 5px; font-size: 30px;">Contact me:</h2>
                 <thought>creanblwebsite@gmail.com</thought>
                 <br>
                 <h2>My Time:</h2>
                 <p id="time">00:00:00</p><br>
+                <h3 style="margin-bottom: 5px">
+                    Send a Private Message:
+                </h3>
+                <form action="https://api.web3forms.com/submit" method="post">
+                    <thought>Feel free to send your own website!</thought><br>
+
+                    <textarea name="name" id="Spamton" class="emailField" style="color: rgb(42, 42, 42);" required></textarea>
+                    <br>
+                    <textarea name="message" placeholder="Text field" class="emailField" style="height: 60px; min-height: 60px; max-height: 240px;" required></textarea>
+                    <br>
+    
+                    <input type="hidden" name="access_key" value="ce174ffb-49aa-4f45-968e-42213c024655">
+                    <input type="hidden" name="subject" value="CreanWebsite Message New!!">
+                    <input type="hidden" name="redirect" value="https://creaamblob.github.io/Creanbl.github.io/SendSuccess.html">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <input type="hidden" name="from_name" value="CreanWebsite">
+                    <div class="h-captcha" data-captcha="true"></div>
+                    <button type="submit" id="submitEmail">Send</button>
+                </form>
             </div>
         </div>
 
         <script>
-            setInterval(UpdateTime, 100);
+            setInterval(UpdateTime, 1);
             function UpdateTime() {
+                document.getElementById("Spamton").value = "(Ignore) Title " + String(Math.round(Math.random() * 10000.0));
+
                 const date = new Date();
                 const offSet = date.getTimezoneOffset() * 60 * 1000;
                 const UTCtime = date.getTime() + offSet;
